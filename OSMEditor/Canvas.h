@@ -17,7 +17,6 @@ public:
 	MainWindow* mainWin;
 	bool ctrlPressed;
 	bool shiftPressed;
-	bool keyAPressed;
 	RoadGraph roads;
 	History history;
 
@@ -43,7 +42,9 @@ public:
 	void open(const QString& filename);
 	void save(const QString& filename);
 	void undo();
+	void redo();
 	void deleteEdge();
+	void planarGraph();
 	bool findClosestVertex(const QVector2D& pt, float threshold, RoadVertexDesc& closest_vertex_desc);
 	bool findClosestVertexExcept(const QVector2D& pt, float threshold, RoadVertexDesc except_vertex, RoadVertexDesc& closest_vertex_desc);
 	bool findClosestEdgePoint(const QVector2D& pt, float threshold, RoadEdgeDesc& closest_edge_desc, int& closest_edge_point);

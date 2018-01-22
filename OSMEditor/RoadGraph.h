@@ -60,7 +60,7 @@ public:
 	RoadEdgeDesc getEdge(RoadVertexDesc src, RoadVertexDesc tgt);
 	bool getEdge(const QVector2D &pt, float threshold, RoadEdgeDesc& e);
 	void deleteEdge(RoadEdgeDesc desc);
-	void snapVertex(RoadVertexDesc v1, RoadVertexDesc v2);
+	bool snapVertex(RoadVertexDesc v1, RoadVertexDesc v2);
 	void orderPolyLine(RoadEdgeDesc e, RoadVertexDesc src);
 	RoadVertexDesc splitEdge(RoadEdgeDesc edge_desc, const QVector2D& pt);
 	void planarify();

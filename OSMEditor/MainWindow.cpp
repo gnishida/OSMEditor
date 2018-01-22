@@ -10,7 +10,9 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 	connect(ui.actionSave, SIGNAL(triggered()), this, SLOT(onSave()));
 	connect(ui.actionExit, SIGNAL(triggered()), this, SLOT(close()));
 	connect(ui.actionUndo, SIGNAL(triggered()), this, SLOT(onUndo()));
+	connect(ui.actionRedo, SIGNAL(triggered()), this, SLOT(onRedo()));
 	connect(ui.actionDeleteEdge, SIGNAL(triggered()), this, SLOT(onDeleteEdge()));
+	connect(ui.actionPlanarGraph, SIGNAL(triggered()), this, SLOT(onPlanarGraph()));
 
 	// create tool bar for file menu
 	ui.mainToolBar->addAction(ui.actionOpen);
@@ -68,6 +70,14 @@ void MainWindow::onUndo() {
 	canvas.undo();
 }
 
+void MainWindow::onRedo() {
+	canvas.redo();
+}
+
 void MainWindow::onDeleteEdge() {
 	canvas.deleteEdge();
+}
+
+void MainWindow::onPlanarGraph() {
+	canvas.planarGraph();
 }

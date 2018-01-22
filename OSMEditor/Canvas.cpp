@@ -18,7 +18,6 @@ Canvas::Canvas() {
 	this->mainWin = mainWin;
 	ctrlPressed = false;
 	shiftPressed = false;
-	keyAPressed = false;
 
 	origin = QPoint(0, 0);// width() * 0.5, height() * 0.5);
 	scale = 0.1;
@@ -50,8 +49,8 @@ void Canvas::open(const QString& filename) {
 	QXmlInputSource source(&file);
 	reader.parse(source);
 
-	roads.reduce();
-	roads.planarify();
+	//roads.reduce();
+	//roads.planarify();
 
 	update();
 }
@@ -75,6 +74,21 @@ void Canvas::undo() {
 	update();
 }
 
+void Canvas::redo() {
+	try {
+		roads = history.redo();
+	}
+	catch (char* ex) {
+	}
+
+	// clear the selection
+	vertex_selected = false;
+	edge_selected = false;
+	edge_point_selected = false;
+
+	update();
+}
+
 void Canvas::deleteEdge() {
 	if (edge_selected) {
 		history.push(roads);
@@ -82,6 +96,10 @@ void Canvas::deleteEdge() {
 		edge_selected = false;
 		update();
 	}
+}
+
+void Canvas::planarGraph() {
+	roads.planarify();
 }
 
 /**
@@ -295,7 +313,8 @@ void Canvas::paintEvent(QPaintEvent *e) {
 	painter.fillRect(0, 0, width(), height(), QColor(255, 255, 255));
 
 	// draw road edges
-	painter.setPen(QPen(QColor(192, 192, 255), 5));
+	painter.setPen(QPen(QColor(128, 128, 255), 1));
+	painter.setBrush(QColor(128, 128, 255));
 	RoadEdgeIter ei, eend;
 	for (boost::tie(ei, eend) = boost::edges(roads.graph); ei != eend; ei++) {
 		if (!roads.graph[*ei]->valid) continue;
@@ -307,15 +326,16 @@ void Canvas::paintEvent(QPaintEvent *e) {
 		}
 		painter.drawPolyline(polygon);
 
-		for (int i = 0; i < roads.graph[*ei]->polyline.size(); i++) {
+		for (int i = 1; i < roads.graph[*ei]->polyline.size() - 1; i++) {
 			QVector2D pt = worldToScreenCoordinates(roads.graph[*ei]->polyline[i]);
-			painter.drawEllipse(pt.x() - 3, pt.y() - 3, 7, 7);
+			painter.drawEllipse(pt.x() - 1, pt.y() - 1, 3, 3);
 		}
 	}
 
 	// draw selected edge
 	if (edge_selected) {
-		painter.setPen(QPen(QColor(0, 0, 255), 5));
+		painter.setPen(QPen(QColor(0, 0, 128), 2));
+		painter.setBrush(QColor(0, 0, 128));
 
 		QPolygonF polygon;
 		for (int i = 0; i < roads.graph[selected_edge_desc]->polyline.size(); i++) {
@@ -324,29 +344,29 @@ void Canvas::paintEvent(QPaintEvent *e) {
 		}
 		painter.drawPolyline(polygon);
 
-		for (int i = 0; i < roads.graph[selected_edge_desc]->polyline.size(); i++) {
+		for (int i = 1; i < roads.graph[selected_edge_desc]->polyline.size() - 1; i++) {
 			QVector2D pt = worldToScreenCoordinates(roads.graph[selected_edge_desc]->polyline[i]);
-			painter.drawEllipse(pt.x() - 3, pt.y() - 3, 7, 7);
+			painter.drawEllipse(pt.x() - 2, pt.y() - 2, 5, 5);
 		}
 	}
 
 	if (edge_point_selected) {
-		painter.setPen(QPen(QColor(0, 0, 0), 3));
+		painter.setPen(QPen(QColor(0, 0, 0), 1));
 		painter.setBrush(QBrush(QColor(0, 0, 0)));
 
 		QVector2D pt = worldToScreenCoordinates(roads.graph[selected_edge_desc]->polyline[selected_edge_point]);
-		painter.drawEllipse(pt.x() - 3, pt.y() - 3, 7, 7);
+		painter.drawEllipse(pt.x() - 2, pt.y() - 2, 5, 5);
 	}
 
 	// draw road vertices
-	painter.setPen(QPen(QColor(192, 192, 192), 3));
+	painter.setPen(QPen(QColor(192, 192, 192), 1));
 	painter.setBrush(QBrush(QColor(255, 255, 255)));
 	RoadVertexIter vi, vend;
 	for (boost::tie(vi, vend) = boost::vertices(roads.graph); vi != vend; vi++) {
 		if (!roads.graph[*vi]->valid) continue;
 
 		QVector2D pt = worldToScreenCoordinates(roads.graph[*vi]->pt);
-		painter.drawEllipse(pt.x() - 6, pt.y() - 6, 13, 13);
+		painter.drawEllipse(pt.x() - 2, pt.y() - 2, 5, 5);
 	}
 
 	// draw selected vertex
@@ -355,12 +375,13 @@ void Canvas::paintEvent(QPaintEvent *e) {
 		painter.setBrush(QBrush(QColor(255, 255, 255)));
 
 		QVector2D pt = worldToScreenCoordinates(roads.graph[selected_vertex_desc]->pt);
-		painter.drawEllipse(pt.x() - 6, pt.y() - 6, 13, 13);
+		painter.drawEllipse(pt.x() - 2, pt.y() - 2, 5, 5);
 	}
 
 	// draw the adding edge
 	if (adding_new_edge) {
-		painter.setPen(QPen(QColor(0, 0, 255), 3));
+		painter.setPen(QPen(QColor(0, 0, 128), 2));
+		painter.setBrush(QColor(0, 0, 128));
 		QPolygonF polygon;
 		for (int i = 0; i < new_edge.size(); i++) {
 			QVector2D pt = worldToScreenCoordinates(new_edge[i]);
@@ -368,6 +389,11 @@ void Canvas::paintEvent(QPaintEvent *e) {
 		}
 		polygon.push_back(QPointF(prev_mouse_pt.x(), prev_mouse_pt.y()));
 		painter.drawPolyline(polygon);
+
+		for (int i = 0; i < new_edge.size(); i++) {
+			QVector2D pt = worldToScreenCoordinates(new_edge[i]);			
+			painter.drawEllipse(pt.x() - 2, pt.y() - 2, 5, 5);
+		}
 	}
 	
 	// draw axes
@@ -380,24 +406,16 @@ void Canvas::mousePressEvent(QMouseEvent* e) {
 	// This is necessary to get key event occured even after the user selects a menu.
 	setFocus();
 
-	vertex_moved = false;
-	vertex_selected = false;
-	edge_selected = false;
-	edge_point_selected = false;
-
 	if (e->buttons() & Qt::LeftButton) {
+		vertex_moved = false;
+		vertex_selected = false;
+		edge_selected = false;
+		edge_point_selected = false;
+
 		QVector2D pt = screenToWorldCoordinates(e->x(), e->y());
 
-		if (shiftPressed) {
-			// add a vertex on an edge
-			RoadEdgeDesc e_desc;
-			
-			if (findClosestEdge(pt, 9, e_desc)) {
-				history.push(roads);
-				roads.splitEdge(e_desc, pt);
-			}
-		}
-		else if (keyAPressed) {
+		//if (ctrlPressed) {
+		if (QApplication::keyboardModifiers() & Qt::ControlModifier) {
 			// add a vertex
 			if (!adding_new_edge) {
 				adding_new_edge = true;
@@ -435,21 +453,15 @@ void Canvas::mouseMoveEvent(QMouseEvent* e) {
 		if (vertex_selected) {
 			QVector2D pt = screenToWorldCoordinates(e->x(), e->y());
 
-			if (ctrlPressed) {
-				// try to snap the currently selected vertex to the closest one
-				RoadVertexDesc target_vertex_desc;
-				RoadEdgeDesc target_edge_desc;
-				QVector2D closest_pt;
-				if (findClosestVertexExcept(pt, 30, selected_vertex_desc, target_vertex_desc)) {
-					roads.moveVertex(selected_vertex_desc, roads.graph[target_vertex_desc]->pt);
-				}
-				else if (findClosestEdgeExcept(pt, 30, selected_vertex_desc, target_edge_desc, closest_pt)) {
-					roads.moveVertex(selected_vertex_desc, closest_pt);
-				}
-				else {
-					// move the currently selected vertex
-					roads.moveVertex(selected_vertex_desc, pt);
-				}
+			// try to snap the currently selected vertex to the closest one
+			RoadVertexDesc target_vertex_desc;
+			RoadEdgeDesc target_edge_desc;
+			QVector2D closest_pt;
+			if (findClosestVertexExcept(pt, 10, selected_vertex_desc, target_vertex_desc)) {
+				roads.moveVertex(selected_vertex_desc, roads.graph[target_vertex_desc]->pt);
+			}
+			else if (findClosestEdgeExcept(pt, 10, selected_vertex_desc, target_edge_desc, closest_pt)) {
+				roads.moveVertex(selected_vertex_desc, closest_pt);
 			}
 			else {
 				// move the currently selected vertex
@@ -465,26 +477,40 @@ void Canvas::mouseMoveEvent(QMouseEvent* e) {
 }
 
 void Canvas::mouseReleaseEvent(QMouseEvent* e) {
-	if (vertex_selected && !vertex_moved) {
-		// if the currently selected vertex was not moved at all, cancel backuping the current state of roads
-		history.undo();
-	}
-	else if (ctrlPressed && vertex_selected) {
-		QVector2D pt = screenToWorldCoordinates(e->x(), e->y());
+	if (e->button() == Qt::LeftButton) {
+		if (vertex_selected) {
+			if (!vertex_moved) {
+				// if the currently selected vertex was not moved at all, cancel backuping the current state of roads
+				history.undo();
+			}
+			else {
+				QVector2D pt = screenToWorldCoordinates(e->x(), e->y());
 
-		// merge the snapped vertex to the closest one
-		RoadVertexDesc target_vertex_desc;
-		RoadEdgeDesc target_edge_desc;
-		QVector2D closest_pt;
-		if (findClosestVertexExcept(pt, 30, selected_vertex_desc, target_vertex_desc)) {
-			roads.snapVertex(selected_vertex_desc, target_vertex_desc);
-		}
-		else if (findClosestEdgeExcept(pt, 30, selected_vertex_desc, target_edge_desc, closest_pt)) {
-			target_vertex_desc = roads.splitEdge(target_edge_desc, closest_pt);
-			roads.snapVertex(selected_vertex_desc, target_vertex_desc);
-		}
+				// merge the snapped vertex to the closest one if that exists.
+				RoadVertexDesc target_vertex_desc;
+				RoadEdgeDesc target_edge_desc;
+				QVector2D closest_pt;
+				if (findClosestVertexExcept(pt, 10, selected_vertex_desc, target_vertex_desc)) {
+					if (roads.snapVertex(selected_vertex_desc, target_vertex_desc)) {
+						selected_vertex_desc = target_vertex_desc;
+					}
+					else {
+						vertex_selected = false;
+					}
+				}
+				else if (findClosestEdgeExcept(pt, 10, selected_vertex_desc, target_edge_desc, closest_pt)) {
+					target_vertex_desc = roads.splitEdge(target_edge_desc, closest_pt);
+					if (roads.snapVertex(selected_vertex_desc, target_vertex_desc)) {
+						selected_vertex_desc = target_vertex_desc;
+					}
+					else {
+						vertex_selected = false;
+					}
+				}
 
-		update();
+				update();
+			}
+		}
 	}
 }
 
@@ -492,42 +518,53 @@ void Canvas::mouseDoubleClickEvent(QMouseEvent* e) {
 	if (adding_new_edge) {
 		setMouseTracking(false);
 
-		if (new_edge.size() >= 2) {
+		if (new_edge.size() == 1) {
+			RoadEdgeDesc closest_edge_desc;
+			QVector2D closest_pt;
+
+			if (findClosestEdge(new_edge[0], 10, closest_edge_desc, closest_pt)) {
+				history.push(roads);
+
+				// add a vertex on the edge
+				selected_vertex_desc = roads.splitEdge(closest_edge_desc, closest_pt);
+				vertex_selected = true;
+			}
+		}
+		else if (new_edge.size() >= 2) {
 			history.push(roads);
 
 			// add the new edge
-			RoadVertexDesc src;
-			RoadEdgeDesc closest_edge_desc;
-			QVector2D closest_pt;
-			if (findClosestVertex(new_edge[0], 10, src)) {
-				new_edge[0] = roads.graph[src]->pt;
-			}
-			else if (findClosestEdge(new_edge[0], 10, closest_edge_desc, closest_pt)) {
-				src = roads.splitEdge(closest_edge_desc, closest_pt);
-				new_edge[0] = roads.graph[src]->pt;
-			}
-			else {
-				RoadVertexPtr v = RoadVertexPtr(new RoadVertex(new_edge[0]));
-				src = boost::add_vertex(roads.graph);
-				roads.graph[src] = v;
-			}
-			RoadVertexDesc tgt;
-			if (findClosestVertex(new_edge.back(), 10, tgt)) {
-				new_edge.back() = roads.graph[tgt]->pt;
-			}
-			else if (findClosestEdge(new_edge.back(), 10, closest_edge_desc, closest_pt)) {
-				tgt = roads.splitEdge(closest_edge_desc, closest_pt);
-				new_edge.back() = roads.graph[tgt]->pt;
-			}
-			else {
-				RoadVertexPtr v = RoadVertexPtr(new RoadVertex(new_edge.back()));
-				tgt = boost::add_vertex(roads.graph);
-				roads.graph[tgt] = v;
-			}
+			for (int i = 0; i < new_edge.size() - 1; i++) {
+				RoadVertexDesc src;
+				RoadEdgeDesc closest_edge_desc;
+				QVector2D closest_pt;
+				if (findClosestVertex(new_edge[i], 10, src)) {
+				}
+				else if (findClosestEdge(new_edge[i], 10, closest_edge_desc, closest_pt)) {
+					src = roads.splitEdge(closest_edge_desc, closest_pt);
+				}
+				else {
+					RoadVertexPtr v = RoadVertexPtr(new RoadVertex(new_edge[i]));
+					src = boost::add_vertex(roads.graph);
+					roads.graph[src] = v;
+				}
 
-			std::pair<RoadEdgeDesc, bool> edge_pair = boost::add_edge(src, tgt, roads.graph);
-			roads.graph[edge_pair.first] = RoadEdgePtr(new RoadEdge(RoadEdge::TYPE_STREET, 1));
-			roads.graph[edge_pair.first]->polyline = new_edge;
+				RoadVertexDesc tgt;
+				if (findClosestVertex(new_edge[i + 1], 10, tgt)) {
+				}
+				else if (findClosestEdge(new_edge[i + 1], 10, closest_edge_desc, closest_pt)) {
+					tgt = roads.splitEdge(closest_edge_desc, closest_pt);
+				}
+				else {
+					RoadVertexPtr v = RoadVertexPtr(new RoadVertex(new_edge[i + 1]));
+					tgt = boost::add_vertex(roads.graph);
+					roads.graph[tgt] = v;
+				}
+
+				std::pair<RoadEdgeDesc, bool> edge_pair = boost::add_edge(src, tgt, roads.graph);
+				roads.graph[edge_pair.first] = RoadEdgePtr(new RoadEdge(RoadEdge::TYPE_STREET, 1));
+				roads.graph[edge_pair.first]->polyline = { roads.graph[src]->pt, roads.graph[tgt]->pt };
+			}
 		}
 
 		adding_new_edge = false;
@@ -571,25 +608,16 @@ void Canvas::keyPressEvent(QKeyEvent* e) {
 	case Qt::Key_Escape:
 		adding_new_edge = false;
 		break;
-	case Qt::Key_A:
-		keyAPressed = true;
-		break;
 	}
 
 	update();
 }
 
 void Canvas::keyReleaseEvent(QKeyEvent* e) {
+	ctrlPressed = false;
+	shiftPressed = false;
+
 	switch (e->key()) {
-	case Qt::Key_Control:
-		ctrlPressed = false;
-		break;
-	case Qt::Key_Shift:
-		shiftPressed = false;
-		break;
-	case Qt::Key_A:
-		keyAPressed = false;
-		break;
 	default:
 		break;
 	}

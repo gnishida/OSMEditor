@@ -277,10 +277,12 @@ void RoadGraph::deleteEdge(RoadEdgeDesc desc) {
 }
 
 /**
-* Snap v1 to v2.
-*/
-void RoadGraph::snapVertex(RoadVertexDesc v1, RoadVertexDesc v2) {
-	if (v1 == v2) return;
+ * Snap v1 to v2.
+ * Return true if v2 is valid. Otherwise, return false.
+ *
+ */
+bool RoadGraph::snapVertex(RoadVertexDesc v1, RoadVertexDesc v2) {
+	if (v1 == v2) return true;
 
 	moveVertex(v1, graph[v2]->pt);
 
@@ -303,8 +305,8 @@ void RoadGraph::snapVertex(RoadVertexDesc v1, RoadVertexDesc v2) {
 		// invalidate the old edge
 		graph[*ei]->valid = false;
 
-		//if (v1b == v2) continue;
-		//if (hasEdge(v2, v1b)) continue;
+		if (v1b == v2) continue;
+		if (hasEdge(v2, v1b)) continue;
 
 		// add a new edge
 		RoadEdgePtr e = RoadEdgePtr(new RoadEdge(*graph[*ei]));
@@ -315,6 +317,15 @@ void RoadGraph::snapVertex(RoadVertexDesc v1, RoadVertexDesc v2) {
 
 	// invalidate v1
 	graph[v1]->valid = false;
+
+	// if there is no edge from v2, disable it as well.
+	if (getDegree(v2) == 0) {
+		graph[v2]->valid = false;
+		return false;
+	}
+	else {
+		return true;
+	}
 }
 
 /**

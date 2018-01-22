@@ -9,5 +9,6 @@ public:
 
 public:
 	static void save(const QString& filename, const RoadGraph& roads);
+	static void calculateBounds(const RoadGraph& roads, double& minlon, double& maxlon, double& minlat, double& maxlat);
 };
 

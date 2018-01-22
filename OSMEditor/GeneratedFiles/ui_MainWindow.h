@@ -31,10 +31,13 @@ public:
     QAction *actionUndo;
     QAction *actionDeleteEdge;
     QAction *actionSave;
+    QAction *actionPlanarGraph;
+    QAction *actionRedo;
     QWidget *centralWidget;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuEdit;
+    QMenu *menuTool;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -65,6 +68,13 @@ public:
         QIcon icon3;
         icon3.addFile(QStringLiteral("Resources/save.png"), QSize(), QIcon::Normal, QIcon::Off);
         actionSave->setIcon(icon3);
+        actionPlanarGraph = new QAction(MainWindowClass);
+        actionPlanarGraph->setObjectName(QStringLiteral("actionPlanarGraph"));
+        actionRedo = new QAction(MainWindowClass);
+        actionRedo->setObjectName(QStringLiteral("actionRedo"));
+        QIcon icon4;
+        icon4.addFile(QStringLiteral("Resources/redo.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionRedo->setIcon(icon4);
         centralWidget = new QWidget(MainWindowClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         MainWindowClass->setCentralWidget(centralWidget);
@@ -75,6 +85,8 @@ public:
         menuFile->setObjectName(QStringLiteral("menuFile"));
         menuEdit = new QMenu(menuBar);
         menuEdit->setObjectName(QStringLiteral("menuEdit"));
+        menuTool = new QMenu(menuBar);
+        menuTool->setObjectName(QStringLiteral("menuTool"));
         MainWindowClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindowClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -85,12 +97,15 @@ public:
 
         menuBar->addAction(menuFile->menuAction());
         menuBar->addAction(menuEdit->menuAction());
+        menuBar->addAction(menuTool->menuAction());
         menuFile->addAction(actionOpen);
         menuFile->addAction(actionSave);
         menuFile->addSeparator();
         menuFile->addAction(actionExit);
         menuEdit->addAction(actionUndo);
+        menuEdit->addAction(actionRedo);
         menuEdit->addAction(actionDeleteEdge);
+        menuTool->addAction(actionPlanarGraph);
 
         retranslateUi(MainWindowClass);
 
@@ -109,8 +124,12 @@ public:
         actionDeleteEdge->setShortcut(QApplication::translate("MainWindowClass", "Del", 0));
         actionSave->setText(QApplication::translate("MainWindowClass", "Save", 0));
         actionSave->setShortcut(QApplication::translate("MainWindowClass", "Ctrl+S", 0));
+        actionPlanarGraph->setText(QApplication::translate("MainWindowClass", "Planar Graph", 0));
+        actionRedo->setText(QApplication::translate("MainWindowClass", "Redo", 0));
+        actionRedo->setShortcut(QApplication::translate("MainWindowClass", "Ctrl+Y", 0));
         menuFile->setTitle(QApplication::translate("MainWindowClass", "File", 0));
         menuEdit->setTitle(QApplication::translate("MainWindowClass", "Edit", 0));
+        menuTool->setTitle(QApplication::translate("MainWindowClass", "Tool", 0));
     } // retranslateUi
 
 };

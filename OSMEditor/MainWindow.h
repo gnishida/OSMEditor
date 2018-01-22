@@ -24,7 +24,9 @@ public slots:
 	void onOpen();
 	void onSave();
 	void onUndo();
+	void onRedo();
 	void onDeleteEdge();
+	void onPlanarGraph();
 };
 
 #endif // MAINWINDOW_H
