@@ -1,0 +1,2585 @@
+<osm version="0.6" generator="OSM Editor">
+    <node id="2" lat="0.004845643219590319" lon="-0.001671907581109938"/>
+    <node id="3" lat="0.002548643316324999" lon="0.0006768538049949904"/>
+    <node id="5" lat="0.00145404323974385" lon="0.001795982167538953"/>
+    <node id="6" lat="0.0001535432567833186" lon="0.003125875842453101"/>
+    <node id="7" lat="-0.001159456804391127" lon="0.004454269401065396"/>
+    <node id="8" lat="-0.002484356808161925" lon="0.005804162707662496"/>
+    <node id="9" lat="-0.003681156831183849" lon="0.006980086660438416"/>
+    <node id="10" lat="0.002745843363732212" lon="0.003053286058970119"/>
+    <node id="11" lat="0.002141743211832674" lon="0.002472259653181682"/>
+    <node id="12" lat="0.001333243304123614" lon="0.00168115528272003"/>
+    <node id="13" lat="-0.002523856855192729" lon="0.0001898432201899386"/>
+    <node id="14" lat="0.005471343044984902" lon="-0.006862685014598476"/>
+    <node id="15" lat="0.00360494313735836" lon="-0.005353119515250051"/>
+    <node id="16" lat="0.003576443394919693" lon="-0.008709333116773219"/>
+    <node id="17" lat="0.002858543164781748" lon="-0.007971119085858404"/>
+    <node id="18" lat="0.002389743387393544" lon="-0.004757687935631717"/>
+    <node id="19" lat="0.007630543339406681" lon="-0.004758594804185543"/>
+    <node id="20" lat="0.004178243341075316" lon="-0.008122869337678688"/>
+    <node id="21" lat="0.0005430432663832227" lon="0.0106083027095682"/>
+    <node id="22" lat="0.0008144432824157678" lon="0.01033033269404149"/>
+    <node id="23" lat="0.001503243326085414" lon="0.009641430600245134"/>
+    <node id="24" lat="0.002497843325243373" lon="0.008628826326952294"/>
+    <node id="25" lat="0.004293243210796738" lon="0.006814344095744121"/>
+    <node id="26" lat="0.005904143046713295" lon="-0.000970839590710038"/>
+    <node id="27" lat="0.004724954038170732" lon="-0.001794868320219064"/>
+    <node id="28" lat="-0.0009320567045428392" lon="-0.002657412439827756"/>
+    <node id="29" lat="-0.0002943567368976033" lon="-0.002087620457659561"/>
+    <node id="30" lat="-0.0002257567432745556" lon="-0.002022035329079477"/>
+    <node id="31" lat="0.0008611432434569253" lon="-0.0009642369680726129"/>
+    <node id="32" lat="0.002430343300397125" lon="0.0005619455679259627"/>
+    <node id="33" lat="0.003843343199118708" lon="0.001934239596964384"/>
+    <node id="34" lat="0.00277084338308801" lon="0.005344958794841868"/>
+    <node id="35" lat="0.0009805432624296071" lon="0.007152534240576925"/>
+    <node id="36" lat="-4.41567394376591e-005" lon="0.008131741736069254"/>
+    <node id="37" lat="0.0009272432831196042" lon="0.007096383505712481"/>
+    <node id="38" lat="-0.0004736567534491335" lon="0.005121606500590427"/>
+    <node id="39" lat="-0.001281656793730947" lon="0.004335541994546405"/>
+    <node id="40" lat="-0.001967256685240394" lon="0.003669003750815161"/>
+    <node id="41" lat="-0.002940374892849542" lon="0.002715792240052283"/>
+    <node id="42" lat="-0.003995256840799353" lon="0.001693539466532151"/>
+    <node id="43" lat="0.00270704320648917" lon="0.005281901274504308"/>
+    <node id="44" lat="0.003784843323795459" lon="0.001993888821263422"/>
+    <node id="45" lat="-0.002687656835070699" lon="0.007519636714660219"/>
+    <node id="46" lat="-0.001795056794261009" lon="0.006467841902981455"/>
+    <node id="47" lat="-0.001748756740868852" lon="0.006420945723328629"/>
+    <node id="48" lat="0.0008401432600953425" lon="0.003791831804198757"/>
+    <node id="49" lat="-0.0001569567444249962" lon="0.009923143230492771"/>
+    <node id="50" lat="-0.0009937567320262876" lon="0.009104057249867761"/>
+    <node id="51" lat="-0.003738256652787514" lon="0.006925152028628618"/>
+    <node id="52" lat="-0.003296656626700661" lon="0.005031982775876511"/>
+    <node id="53" lat="-0.003228356649484383" lon="0.004963141912427857"/>
+    <node id="54" lat="-0.0006542567268699715" lon="0.002342235044052479"/>
+    <node id="55" lat="0.0008053432759185456" lon="-0.000907431988406566"/>
+    <node id="56" lat="0.00139824327220547" lon="-0.003744923562207246"/>
+    <node id="57" lat="0.0005799432626033809" lon="0.008743458021199777"/>
+    <node id="58" lat="-0.005352456634910525" lon="-0.002565639425675513"/>
+    <node id="59" lat="-0.006025056477974789" lon="-0.003217234350785096"/>
+    <node id="60" lat="-0.005563456546060922" lon="-0.008444727075932685"/>
+    <node id="61" lat="-0.005085256642964703" lon="-0.008936703814670965"/>
+    <node id="62" lat="-0.004636156583656704" lon="-0.00939795668020359"/>
+    <node id="63" lat="-0.0026786566855477" lon="-0.009686074412292694"/>
+    <node id="64" lat="-0.001910656765331984" lon="-0.008936836500396493"/>
+    <node id="65" lat="0.002318443177573558" lon="-0.008484446164068238"/>
+    <node id="66" lat="-0.001203156738436623" lon="-0.00966899194756296"/>
+    <node id="67" lat="-0.003000056603219811" lon="-0.007825578745308148"/>
+    <node id="68" lat="-0.003792756766260609" lon="-0.008563034493750208"/>
+    <node id="69" lat="-0.003182956748116555" lon="-0.006119716777377603"/>
+    <node id="70" lat="-0.003819256627774199" lon="-0.005465609047804792"/>
+    <node id="71" lat="-0.005108256781395423" lon="-0.004159802218379213"/>
+    <node id="72" lat="0.002370743284957038" lon="-0.006175201890461912"/>
+    <node id="73" lat="0.0005403432557943306" lon="-0.0079779332106389"/>
+    <node id="74" lat="-0.003086256816899818" lon="-0.004750618308586359"/>
+    <node id="75" lat="-0.005382856469836061" lon="-0.008268263833588484"/>
+    <node id="76" lat="-0.005091356896610325" lon="-0.007983290533879181"/>
+    <node id="77" lat="-0.004929956773842448" lon="-0.007825605063138006"/>
+    <node id="78" lat="-0.004781656899174053" lon="-0.007680599851794844"/>
+    <node id="79" lat="-0.004530556839643298" lon="-0.00743513290442975"/>
+    <node id="80" lat="-0.003651156698299268" lon="-0.00657560464363624"/>
+    <node id="81" lat="-0.003408856663126974" lon="-0.006339654333205088"/>
+    <node id="82" lat="-0.002966356622087821" lon="-0.005908802399174243"/>
+    <node id="83" lat="-0.002540756739977828" lon="-0.005507782273574516"/>
+    <node id="84" lat="-0.002493556808705401" lon="-0.005463324331200324"/>
+    <node id="85" lat="-0.002272956783754482" lon="-0.005245099079177915"/>
+    <node id="86" lat="-0.002096956707801359" lon="-0.005071007182961462"/>
+    <node id="87" lat="-0.002716056789071158" lon="-0.006156090211392575"/>
+    <node id="88" lat="-0.002496956743350063" lon="-0.006412481251300847"/>
+    <node id="89" lat="-0.002361056678705267" lon="-0.006756324794959824"/>
+    <node id="90" lat="-0.002163556717695307" lon="-0.007049936922319713"/>
+    <node id="91" lat="-0.001165256733217911" lon="-0.006558902690863191"/>
+    <node id="92" lat="-0.0008955567530437116" lon="-0.006292968696191118"/>
+    <node id="93" lat="-0.0003905567321510794" lon="-0.005795079766633072"/>
+    <node id="94" lat="-0.001349356806669702" lon="-0.004821788299977366"/>
+    <node id="95" lat="-0.00110645673868387" lon="-0.005068343599264676"/>
+    <node id="96" lat="-0.0008646567422788606" lon="-0.005313841250764605"/>
+    <node id="97" lat="-0.0006288567313291584" lon="-0.005553160791705585"/>
+    <node id="98" lat="-0.002972656726753921" lon="-0.005070493436991126"/>
+    <node id="99" lat="-0.002872256673145714" lon="-0.004972312031268683"/>
+    <node id="100" lat="-0.002700356832841106" lon="-0.004808459964019121"/>
+    <node id="101" lat="0.002093643265607947" lon="-0.009484769331715897"/>
+    <node id="102" lat="0.001615143311836951" lon="-0.00916951353073917"/>
+    <node id="103" lat="0.0006304432715462456" lon="-0.008238304274024931"/>
+    <node id="104" lat="0.002172043258320002" lon="-0.008629358166430658"/>
+    <node id="105" lat="0.0009236432918464197" lon="-0.007952783234481729"/>
+    <node id="106" lat="0.0003295432642004261" lon="-0.008535367875112953"/>
+    <node id="107" lat="3.034326272844585e-005" lon="-0.008818861893469039"/>
+    <node id="108" lat="-0.001087156722644618" lon="-0.00991505927042167"/>
+    <node id="109" lat="0.002008743317209316" lon="-0.008790444668392737"/>
+    <node id="110" lat="0.001871243210752428" lon="-0.00891983518230882"/>
+    <node id="111" lat="0.0005600432480185982" lon="-0.009356061984799853"/>
+    <node id="112" lat="3.234326144979904e-005" lon="0.003008286133787307"/>
+    <node id="113" lat="-0.005005356808094856" lon="-0.006949815124933433"/>
+    <node id="114" lat="-0.004767056534772716" lon="-0.007193450241682852"/>
+    <node id="115" lat="-0.00429025668539608" lon="-0.00768079668723065"/>
+    <node id="116" lat="-0.0034686568037316" lon="-0.007347911229978413"/>
+    <node id="117" lat="-0.003408556749524228" lon="-0.006821918147861738"/>
+    <node id="118" lat="-0.003886456739017701" lon="-0.006335547106883018"/>
+    <node id="119" lat="-0.004122356606941626" lon="-0.006094919350482893"/>
+    <node id="120" lat="-0.004126256854497633" lon="-0.006091018280494704"/>
+    <node id="121" lat="0.005967543247127121" lon="-0.003044314146285404"/>
+    <node id="122" lat="0.002511443337966079" lon="-0.006421750062003635"/>
+    <node id="123" lat="0.002321943174800489" lon="-0.006606887770726354"/>
+    <node id="124" lat="0.002067143267022326" lon="-0.006855907076834034"/>
+    <node id="125" lat="0.003109243248127488" lon="-0.007034112230541899"/>
+    <node id="126" lat="0.002917943329201358" lon="-0.007223882973895709"/>
+    <node id="127" lat="0.002654143271900197" lon="-0.007485580346248914"/>
+    <node id="128" lat="-0.003229756703203967" lon="-0.007591377473986249"/>
+    <node id="129" lat="0.0003918432559613975" lon="-0.002732053369175225"/>
+    <node id="130" lat="-0.000284356732582085" lon="-0.001963117384063185"/>
+    <node id="131" lat="-0.005326856514205174" lon="0.003050505964047403"/>
+    <node id="132" lat="-0.002598556725513315" lon="0.005695593435180216"/>
+    <node id="133" lat="-0.005258656599571164" lon="0.003111376911354338"/>
+    <node id="134" lat="0.002373643180834415" lon="0.0006197256780170265"/>
+    <node id="135" lat="-0.0003541567404301981" lon="-0.002027239679933714"/>
+    <node id="136" lat="-0.005263956900846756" lon="0.002983940770449204"/>
+    <node id="137" lat="-0.002543156871231981" lon="0.005638294036700135"/>
+    <node id="138" lat="0.000319943253203927" lon="0.00900069781112094"/>
+    <node id="139" lat="0.0002036432552731604" lon="0.008886285980410387"/>
+    <node id="140" lat="0.0001209432615621331" lon="0.008971301343458703"/>
+    <node id="141" lat="-0.0004933567456734012" lon="0.008907900046468636"/>
+    <node id="142" lat="-0.000459756724319658" lon="0.008910009310874056"/>
+    <node id="143" lat="-0.003879956783331124" lon="-0.005860269031189056"/>
+    <node id="144" lat="-0.004069356609770386" lon="-0.00840767211978204"/>
+    <node id="145" lat="-0.004216156642280988" lon="-0.008550320240488629"/>
+    <node id="146" lat="-0.004378956818768449" lon="-0.008708655980942523"/>
+    <node id="147" lat="-0.006113856673929428" lon="-0.007521918689824074"/>
+    <node id="148" lat="-0.003694056679974734" lon="-0.005680320321253159"/>
+    <node id="149" lat="-0.005823957005443753" lon="-0.007237270524971132"/>
+    <node id="150" lat="-0.005258056772365672" lon="-0.007194388362659632"/>
+    <node id="152" lat="-0.005787856618913549" lon="-0.007201831922204209"/>
+    <node id="153" lat="-0.005400256941676567" lon="-0.007325982446538125"/>
+    <node id="154" lat="-0.004058756829651386" lon="-0.00871682931197751"/>
+    <node id="155" lat="-0.001858556783113042" lon="-0.005313500763840829"/>
+    <node id="156" lat="-0.001406356702763128" lon="-0.006311619813237957"/>
+    <node id="157" lat="-0.001138956722724798" lon="-0.00604544292692783"/>
+    <node id="158" lat="-0.002259556759124283" lon="-0.005704517920942376"/>
+    <node id="159" lat="-0.001649456690305453" lon="-0.006062385578186445"/>
+    <node id="160" lat="-0.001377456709995384" lon="-0.005802790890781197"/>
+    <node id="161" lat="-0.002019956768808889" lon="-0.005951398903374168"/>
+    <node id="162" lat="-0.001884956719116393" lon="-0.005820869595028644"/>
+    <node id="163" lat="-0.001615656783663225" lon="-0.005560544039556739"/>
+    <node id="164" lat="0.005782343033558491" lon="-0.002857500046629601"/>
+    <node id="165" lat="0.001218492083065531" lon="-0.007373909956148475"/>
+    <node id="166" lat="0.001757215730015415" lon="-0.0068513650580312"/>
+    <node id="167" lat="0.0005625997784595583" lon="-0.003181999437055504"/>
+    <node id="168" lat="0.002606870418307542" lon="-0.00262369710662835"/>
+    <node id="169" lat="0.003971021683373776" lon="-0.00100972507529207"/>
+    <node id="170" lat="0.003684848729253488" lon="-0.003496346176325917"/>
+    <node id="171" lat="0.004374391771864491" lon="-0.004226892397854249"/>
+    <node id="172" lat="0.001741633381587536" lon="-0.005379719713489971"/>
+    <node id="173" lat="0.0005783778314789915" lon="-0.006708635790682554"/>
+    <way id="174">
+        <nd ref="10"/>
+        <nd ref="11"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="175">
+        <nd ref="11"/>
+        <nd ref="5"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="176">
+        <nd ref="5"/>
+        <nd ref="12"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="177">
+        <nd ref="16"/>
+        <nd ref="17"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="178">
+        <nd ref="14"/>
+        <nd ref="20"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="179">
+        <nd ref="20"/>
+        <nd ref="16"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="180">
+        <nd ref="21"/>
+        <nd ref="22"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="181">
+        <nd ref="22"/>
+        <nd ref="23"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="182">
+        <nd ref="23"/>
+        <nd ref="24"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="183">
+        <nd ref="24"/>
+        <nd ref="25"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="184">
+        <nd ref="2"/>
+        <nd ref="27"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="185">
+        <nd ref="29"/>
+        <nd ref="30"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="186">
+        <nd ref="30"/>
+        <nd ref="31"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="187">
+        <nd ref="32"/>
+        <nd ref="3"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="188">
+        <nd ref="3"/>
+        <nd ref="33"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="189">
+        <nd ref="24"/>
+        <nd ref="35"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="190">
+        <nd ref="35"/>
+        <nd ref="37"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="191">
+        <nd ref="38"/>
+        <nd ref="7"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="192">
+        <nd ref="7"/>
+        <nd ref="39"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="193">
+        <nd ref="39"/>
+        <nd ref="40"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="194">
+        <nd ref="40"/>
+        <nd ref="41"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="195">
+        <nd ref="42"/>
+        <nd ref="41"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="196">
+        <nd ref="25"/>
+        <nd ref="34"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="197">
+        <nd ref="34"/>
+        <nd ref="43"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="198">
+        <nd ref="10"/>
+        <nd ref="44"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="199">
+        <nd ref="44"/>
+        <nd ref="33"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="200">
+        <nd ref="46"/>
+        <nd ref="47"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="201">
+        <nd ref="47"/>
+        <nd ref="38"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="202">
+        <nd ref="38"/>
+        <nd ref="48"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="203">
+        <nd ref="48"/>
+        <nd ref="11"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="204">
+        <nd ref="21"/>
+        <nd ref="49"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="205">
+        <nd ref="49"/>
+        <nd ref="50"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="206">
+        <nd ref="9"/>
+        <nd ref="51"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="207">
+        <nd ref="52"/>
+        <nd ref="53"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="208">
+        <nd ref="53"/>
+        <nd ref="40"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="209">
+        <nd ref="40"/>
+        <nd ref="54"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="210">
+        <nd ref="55"/>
+        <nd ref="31"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="211">
+        <nd ref="23"/>
+        <nd ref="57"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="212">
+        <nd ref="58"/>
+        <nd ref="59"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="213">
+        <nd ref="60"/>
+        <nd ref="61"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="214">
+        <nd ref="61"/>
+        <nd ref="62"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="215">
+        <nd ref="66"/>
+        <nd ref="64"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="216">
+        <nd ref="64"/>
+        <nd ref="67"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="217">
+        <nd ref="62"/>
+        <nd ref="68"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="218">
+        <nd ref="68"/>
+        <nd ref="67"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="219">
+        <nd ref="69"/>
+        <nd ref="70"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="220">
+        <nd ref="70"/>
+        <nd ref="71"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="221">
+        <nd ref="71"/>
+        <nd ref="59"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="222">
+        <nd ref="73"/>
+        <nd ref="66"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="223">
+        <nd ref="74"/>
+        <nd ref="70"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="224">
+        <nd ref="60"/>
+        <nd ref="75"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="225">
+        <nd ref="75"/>
+        <nd ref="76"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="226">
+        <nd ref="76"/>
+        <nd ref="77"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="227">
+        <nd ref="77"/>
+        <nd ref="78"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="228">
+        <nd ref="78"/>
+        <nd ref="79"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="229">
+        <nd ref="79"/>
+        <nd ref="80"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="230">
+        <nd ref="80"/>
+        <nd ref="81"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="231">
+        <nd ref="81"/>
+        <nd ref="69"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="232">
+        <nd ref="69"/>
+        <nd ref="82"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="233">
+        <nd ref="82"/>
+        <nd ref="83"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="234">
+        <nd ref="83"/>
+        <nd ref="84"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="235">
+        <nd ref="84"/>
+        <nd ref="85"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="236">
+        <nd ref="85"/>
+        <nd ref="86"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="237">
+        <nd ref="82"/>
+        <nd ref="87"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="238">
+        <nd ref="91"/>
+        <nd ref="92"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="239">
+        <nd ref="92"/>
+        <nd ref="93"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="240">
+        <nd ref="94"/>
+        <nd ref="95"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="241">
+        <nd ref="95"/>
+        <nd ref="96"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="242">
+        <nd ref="96"/>
+        <nd ref="97"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="243">
+        <nd ref="97"/>
+        <nd ref="93"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="244">
+        <nd ref="98"/>
+        <nd ref="99"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="245">
+        <nd ref="63"/>
+        <nd ref="68"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="246">
+        <nd ref="101"/>
+        <nd ref="102"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="247">
+        <nd ref="105"/>
+        <nd ref="103"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="248">
+        <nd ref="103"/>
+        <nd ref="106"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="249">
+        <nd ref="106"/>
+        <nd ref="107"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="250">
+        <nd ref="107"/>
+        <nd ref="108"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="251">
+        <nd ref="65"/>
+        <nd ref="104"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="252">
+        <nd ref="104"/>
+        <nd ref="109"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="253">
+        <nd ref="109"/>
+        <nd ref="110"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="254">
+        <nd ref="110"/>
+        <nd ref="102"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="255">
+        <nd ref="110"/>
+        <nd ref="105"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="256">
+        <nd ref="54"/>
+        <nd ref="112"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="257">
+        <nd ref="112"/>
+        <nd ref="6"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="258">
+        <nd ref="6"/>
+        <nd ref="48"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="259">
+        <nd ref="113"/>
+        <nd ref="114"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="260">
+        <nd ref="114"/>
+        <nd ref="79"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="261">
+        <nd ref="79"/>
+        <nd ref="115"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="262">
+        <nd ref="117"/>
+        <nd ref="80"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="263">
+        <nd ref="80"/>
+        <nd ref="118"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="264">
+        <nd ref="118"/>
+        <nd ref="119"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="265">
+        <nd ref="119"/>
+        <nd ref="120"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="266">
+        <nd ref="15"/>
+        <nd ref="122"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="267">
+        <nd ref="122"/>
+        <nd ref="123"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="268">
+        <nd ref="123"/>
+        <nd ref="124"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="269">
+        <nd ref="125"/>
+        <nd ref="126"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="270">
+        <nd ref="126"/>
+        <nd ref="127"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="271">
+        <nd ref="126"/>
+        <nd ref="123"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="272">
+        <nd ref="127"/>
+        <nd ref="124"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="273">
+        <nd ref="125"/>
+        <nd ref="122"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="274">
+        <nd ref="36"/>
+        <nd ref="50"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="275">
+        <nd ref="67"/>
+        <nd ref="128"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="276">
+        <nd ref="128"/>
+        <nd ref="116"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="277">
+        <nd ref="30"/>
+        <nd ref="130"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="278">
+        <nd ref="8"/>
+        <nd ref="132"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="279">
+        <nd ref="132"/>
+        <nd ref="52"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="280">
+        <nd ref="133"/>
+        <nd ref="131"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="281">
+        <nd ref="55"/>
+        <nd ref="130"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="282">
+        <nd ref="130"/>
+        <nd ref="135"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="283">
+        <nd ref="56"/>
+        <nd ref="18"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="284">
+        <nd ref="42"/>
+        <nd ref="13"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="285">
+        <nd ref="13"/>
+        <nd ref="135"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="286">
+        <nd ref="135"/>
+        <nd ref="29"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="287">
+        <nd ref="57"/>
+        <nd ref="138"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="288">
+        <nd ref="139"/>
+        <nd ref="140"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="289">
+        <nd ref="141"/>
+        <nd ref="142"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="290">
+        <nd ref="143"/>
+        <nd ref="81"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="291">
+        <nd ref="128"/>
+        <nd ref="144"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="292">
+        <nd ref="144"/>
+        <nd ref="145"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="293">
+        <nd ref="145"/>
+        <nd ref="146"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="294">
+        <nd ref="75"/>
+        <nd ref="147"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="295">
+        <nd ref="115"/>
+        <nd ref="117"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="296">
+        <nd ref="114"/>
+        <nd ref="118"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="297">
+        <nd ref="146"/>
+        <nd ref="76"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="298">
+        <nd ref="76"/>
+        <nd ref="149"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="299">
+        <nd ref="144"/>
+        <nd ref="78"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="300">
+        <nd ref="78"/>
+        <nd ref="150"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="301">
+        <nd ref="139"/>
+        <nd ref="138"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="302">
+        <nd ref="150"/>
+        <nd ref="113"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="303">
+        <nd ref="113"/>
+        <nd ref="119"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="304">
+        <nd ref="119"/>
+        <nd ref="143"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="305">
+        <nd ref="155"/>
+        <nd ref="94"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="306">
+        <nd ref="99"/>
+        <nd ref="74"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="307">
+        <nd ref="156"/>
+        <nd ref="90"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="308">
+        <nd ref="157"/>
+        <nd ref="97"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="309">
+        <nd ref="87"/>
+        <nd ref="158"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="310">
+        <nd ref="159"/>
+        <nd ref="89"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="311">
+        <nd ref="96"/>
+        <nd ref="160"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="312">
+        <nd ref="85"/>
+        <nd ref="100"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="313">
+        <nd ref="83"/>
+        <nd ref="98"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="314">
+        <nd ref="84"/>
+        <nd ref="158"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="315">
+        <nd ref="158"/>
+        <nd ref="161"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="316">
+        <nd ref="162"/>
+        <nd ref="159"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="317">
+        <nd ref="159"/>
+        <nd ref="156"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="318">
+        <nd ref="156"/>
+        <nd ref="91"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="319">
+        <nd ref="88"/>
+        <nd ref="161"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="320">
+        <nd ref="161"/>
+        <nd ref="162"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="321">
+        <nd ref="162"/>
+        <nd ref="163"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="322">
+        <nd ref="163"/>
+        <nd ref="95"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="323">
+        <nd ref="86"/>
+        <nd ref="155"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="324">
+        <nd ref="155"/>
+        <nd ref="163"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="325">
+        <nd ref="163"/>
+        <nd ref="160"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="326">
+        <nd ref="160"/>
+        <nd ref="157"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="327">
+        <nd ref="132"/>
+        <nd ref="137"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="328">
+        <nd ref="137"/>
+        <nd ref="39"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="329">
+        <nd ref="39"/>
+        <nd ref="112"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="330">
+        <nd ref="112"/>
+        <nd ref="12"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="331">
+        <nd ref="12"/>
+        <nd ref="134"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="332">
+        <nd ref="134"/>
+        <nd ref="32"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="333">
+        <nd ref="164"/>
+        <nd ref="27"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="334">
+        <nd ref="164"/>
+        <nd ref="121"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="335">
+        <nd ref="121"/>
+        <nd ref="19"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <node id="337" lat="0.004939343466491472" lon="-0.006731328887764942"/>
+    <node id="338" lat="0.00500404310975449" lon="-0.006762284138558086"/>
+    <node id="339" lat="0.005097843145093851" lon="-0.006759757078603685"/>
+    <node id="340" lat="0.005325243450550184" lon="-0.006762500712366285"/>
+    <node id="341" lat="0.005354443082776612" lon="-0.006773631509531463"/>
+    <way id="336">
+        <nd ref="15"/>
+        <nd ref="337"/>
+        <nd ref="338"/>
+        <nd ref="339"/>
+        <nd ref="340"/>
+        <nd ref="341"/>
+        <nd ref="14"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="343" lat="0.006365843315353492" lon="-0.005990998464699119"/>
+    <way id="342">
+        <nd ref="19"/>
+        <nd ref="343"/>
+        <nd ref="14"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="345" lat="0.006029342994512761" lon="-0.0009672625590019634"/>
+    <node id="346" lat="0.006138643135061697" lon="-0.00094718959378269"/>
+    <node id="347" lat="0.006285043191387285" lon="-0.0008983497327372941"/>
+    <node id="348" lat="0.00639344304283986" lon="-0.0008360210929219471"/>
+    <node id="349" lat="0.006493043418222096" lon="-0.0007588218511971216"/>
+    <node id="350" lat="0.006766343115525419" lon="-0.0004938272796861193"/>
+    <node id="351" lat="0.00705234335888727" lon="-0.0002217648116641442"/>
+    <node id="352" lat="0.007319843264435838" lon="3.388114109605683e-005"/>
+    <node id="353" lat="0.007366143454900027" lon="7.808674885434165e-005"/>
+    <node id="354" lat="0.007707943528728228" lon="0.0004128776101346296"/>
+    <node id="355" lat="0.008021743076452863" lon="0.0007128054683720956"/>
+    <node id="356" lat="0.008249243170347403" lon="0.0009496747782317722"/>
+    <node id="357" lat="0.008314943439433113" lon="0.001043122264308672"/>
+    <node id="358" lat="0.008349843074976087" lon="0.001124299884646893"/>
+    <node id="359" lat="0.008365643093788408" lon="0.001221079591785385"/>
+    <node id="360" lat="0.00837254329980406" lon="0.001302826335194265"/>
+    <node id="361" lat="0.008367743037295755" lon="0.001400500163187745"/>
+    <node id="362" lat="0.008348443295400562" lon="0.001473064999561175"/>
+    <node id="363" lat="0.008311743081664866" lon="0.001558063091533648"/>
+    <node id="364" lat="0.008251843152622033" lon="0.001630628887411293"/>
+    <node id="365" lat="0.007958743126368115" lon="0.001920000828579521"/>
+    <node id="366" lat="0.007589343325053546" lon="0.002296081520660933"/>
+    <node id="367" lat="0.00710814318935362" lon="0.002763343898154987"/>
+    <node id="368" lat="0.006861343353563886" lon="0.003047765345869474"/>
+    <node id="369" lat="0.005247343222461353" lon="0.004694124345357531"/>
+    <node id="370" lat="0.005203043187066304" lon="0.004771407201020964"/>
+    <node id="371" lat="0.005165143318919621" lon="0.004857304211369493"/>
+    <node id="372" lat="0.004835443415656335" lon="0.006159968801567762"/>
+    <node id="373" lat="0.004779043209696372" lon="0.006278861242811481"/>
+    <node id="374" lat="0.004707843062458654" lon="0.00639507255513851"/>
+    <way id="344">
+        <nd ref="26"/>
+        <nd ref="345"/>
+        <nd ref="346"/>
+        <nd ref="347"/>
+        <nd ref="348"/>
+        <nd ref="349"/>
+        <nd ref="350"/>
+        <nd ref="351"/>
+        <nd ref="352"/>
+        <nd ref="353"/>
+        <nd ref="354"/>
+        <nd ref="355"/>
+        <nd ref="356"/>
+        <nd ref="357"/>
+        <nd ref="358"/>
+        <nd ref="359"/>
+        <nd ref="360"/>
+        <nd ref="361"/>
+        <nd ref="362"/>
+        <nd ref="363"/>
+        <nd ref="364"/>
+        <nd ref="365"/>
+        <nd ref="366"/>
+        <nd ref="367"/>
+        <nd ref="368"/>
+        <nd ref="369"/>
+        <nd ref="370"/>
+        <nd ref="371"/>
+        <nd ref="372"/>
+        <nd ref="373"/>
+        <nd ref="374"/>
+        <nd ref="25"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="376" lat="0.005099343261395705" lon="-0.001428439418093675"/>
+    <node id="377" lat="0.005315643473821693" lon="-0.001219184708035676"/>
+    <node id="378" lat="0.005427243134754391" lon="-0.001114598406079812"/>
+    <node id="379" lat="0.005483843465878893" lon="-0.001075835532429067"/>
+    <node id="380" lat="0.005587143141220417" lon="-0.001016512813706693"/>
+    <node id="381" lat="0.005713143041389912" lon="-0.0009813247100755194"/>
+    <way id="375">
+        <nd ref="2"/>
+        <nd ref="376"/>
+        <nd ref="377"/>
+        <nd ref="378"/>
+        <nd ref="379"/>
+        <nd ref="380"/>
+        <nd ref="381"/>
+        <nd ref="26"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="383" lat="-0.0008674567126459989" lon="-0.002634167490750553"/>
+    <way id="382">
+        <nd ref="28"/>
+        <nd ref="383"/>
+        <nd ref="29"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <node id="385" lat="0.001498143287046392" lon="-0.0003433546419941722"/>
+    <way id="384">
+        <nd ref="31"/>
+        <nd ref="385"/>
+        <nd ref="32"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <node id="387" lat="0.00439224321068536" lon="0.003686264683328611"/>
+    <node id="388" lat="0.004447543276528486" lon="0.003607517898379378"/>
+    <node id="389" lat="0.004536643386085869" lon="0.003448806854705959"/>
+    <node id="390" lat="0.004570543218238335" lon="0.003366323212061081"/>
+    <node id="391" lat="0.004597243204916465" lon="0.003261655283711051"/>
+    <node id="392" lat="0.004609743351666393" lon="0.003135940493365006"/>
+    <node id="393" lat="0.004610543304036424" lon="0.003038993558349298"/>
+    <node id="394" lat="0.004597543392663272" lon="0.002916205529998608"/>
+    <node id="395" lat="0.004576243221554882" lon="0.00282015312705398"/>
+    <node id="396" lat="0.00454094333568283" lon="0.002726457814745925"/>
+    <node id="397" lat="0.004500143297514711" lon="0.002642351787547982"/>
+    <node id="398" lat="0.004433043248853479" lon="0.002524684770256983"/>
+    <node id="399" lat="0.004208543387562644" lon="0.002288864952398873"/>
+    <way id="386">
+        <nd ref="34"/>
+        <nd ref="387"/>
+        <nd ref="388"/>
+        <nd ref="389"/>
+        <nd ref="390"/>
+        <nd ref="391"/>
+        <nd ref="392"/>
+        <nd ref="393"/>
+        <nd ref="394"/>
+        <nd ref="395"/>
+        <nd ref="396"/>
+        <nd ref="397"/>
+        <nd ref="398"/>
+        <nd ref="399"/>
+        <nd ref="33"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <node id="401" lat="0.001053143257778862" lon="0.007080769356573526"/>
+    <node id="402" lat="0.002663343272443674" lon="0.005454917429425353"/>
+    <way id="400">
+        <nd ref="35"/>
+        <nd ref="401"/>
+        <nd ref="402"/>
+        <nd ref="34"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <node id="404" lat="5.514325972372828e-005" lon="0.008068261485589616"/>
+    <way id="403">
+        <nd ref="35"/>
+        <nd ref="404"/>
+        <nd ref="36"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <node id="406" lat="-0.0002844567437623427" lon="0.005307535937361347"/>
+    <node id="407" lat="-0.0002260567425473209" lon="0.005384493109880299"/>
+    <node id="408" lat="-0.0001530567367450427" lon="0.005483797409676644"/>
+    <node id="409" lat="-0.0001090567348907659" lon="0.005585298151689809"/>
+    <node id="410" lat="-7.665673632908987e-005" lon="0.005698420957025486"/>
+    <node id="411" lat="2.984326251266993e-005" lon="0.006128726247798677"/>
+    <node id="412" lat="8.52432624330362e-005" lon="0.006255255794294047"/>
+    <node id="413" lat="0.0001744432632326514" lon="0.006379669496926534"/>
+    <way id="405">
+        <nd ref="38"/>
+        <nd ref="406"/>
+        <nd ref="407"/>
+        <nd ref="408"/>
+        <nd ref="409"/>
+        <nd ref="410"/>
+        <nd ref="411"/>
+        <nd ref="412"/>
+        <nd ref="413"/>
+        <nd ref="37"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="415" lat="0.001947543259957137" lon="0.003873695332977628"/>
+    <node id="416" lat="0.001909843242830933" lon="0.003929039261870515"/>
+    <node id="417" lat="0.001877443252836258" lon="0.00398137610455817"/>
+    <node id="418" lat="0.001855843305197153" lon="0.004046146202844868"/>
+    <node id="419" lat="0.001840643250662354" lon="0.00410222045151629"/>
+    <node id="420" lat="0.001832943229348701" lon="0.004174710172417003"/>
+    <node id="421" lat="0.00183134332460864" lon="0.004252075271298741"/>
+    <node id="422" lat="0.001841743253707162" lon="0.004316925145507193"/>
+    <node id="423" lat="0.001866943261155467" lon="0.004399002232509591"/>
+    <node id="424" lat="0.001894743250878403" lon="0.004456049418453541"/>
+    <node id="425" lat="0.00193574327713903" lon="0.004521628790008345"/>
+    <node id="426" lat="0.001988443223635495" lon="0.004579812028941126"/>
+    <way id="414">
+        <nd ref="10"/>
+        <nd ref="415"/>
+        <nd ref="416"/>
+        <nd ref="417"/>
+        <nd ref="418"/>
+        <nd ref="419"/>
+        <nd ref="420"/>
+        <nd ref="421"/>
+        <nd ref="422"/>
+        <nd ref="423"/>
+        <nd ref="424"/>
+        <nd ref="425"/>
+        <nd ref="426"/>
+        <nd ref="43"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="428" lat="0.005907243067755211" lon="-0.0003430919091797007"/>
+    <node id="429" lat="0.005894743195149342" lon="-0.0002684935749657117"/>
+    <node id="430" lat="0.005874443375719582" lon="-0.0001956017532635101"/>
+    <node id="431" lat="0.005846943436671422" lon="-0.0001330301618410937"/>
+    <node id="432" lat="0.005810043097771187" lon="-7.744706795597957e-005"/>
+    <node id="433" lat="0.005721443026981088" lon="1.93359182024922e-005"/>
+    <way id="427">
+        <nd ref="26"/>
+        <nd ref="428"/>
+        <nd ref="429"/>
+        <nd ref="430"/>
+        <nd ref="431"/>
+        <nd ref="432"/>
+        <nd ref="433"/>
+        <nd ref="33"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="435" lat="-0.002502056645317055" lon="0.007183322263492852"/>
+    <node id="436" lat="-0.002570356622533333" lon="0.007284997909416944"/>
+    <node id="437" lat="-0.002665456649010009" lon="0.007464777198323138"/>
+    <way id="434">
+        <nd ref="46"/>
+        <nd ref="435"/>
+        <nd ref="436"/>
+        <nd ref="437"/>
+        <nd ref="45"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="439" lat="-0.002573256792554771" lon="0.007590737621747849"/>
+    <node id="440" lat="-0.002466256720677719" lon="0.007671591477950015"/>
+    <node id="441" lat="-0.002288556677402266" lon="0.007835821315715651"/>
+    <node id="442" lat="-0.002132156805235202" lon="0.007990219250877178"/>
+    <way id="438">
+        <nd ref="45"/>
+        <nd ref="439"/>
+        <nd ref="440"/>
+        <nd ref="441"/>
+        <nd ref="442"/>
+        <nd ref="50"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="444" lat="-0.003429756858050349" lon="0.00722940533186072"/>
+    <node id="445" lat="-0.003331156834346742" lon="0.007292137717341921"/>
+    <node id="446" lat="-0.003261756717013626" lon="0.007330816702909997"/>
+    <node id="447" lat="-0.003176256667265441" lon="0.00736843749240257"/>
+    <node id="448" lat="-0.003080756664603749" lon="0.007396304236204361"/>
+    <node id="449" lat="-0.002970856696849321" lon="0.007423357320433072"/>
+    <node id="450" lat="-0.002845356835447109" lon="0.007458210899773796"/>
+    <way id="443">
+        <nd ref="9"/>
+        <nd ref="444"/>
+        <nd ref="445"/>
+        <nd ref="446"/>
+        <nd ref="447"/>
+        <nd ref="448"/>
+        <nd ref="449"/>
+        <nd ref="450"/>
+        <nd ref="45"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="452" lat="-0.003902556671432769" lon="0.005622216584098071"/>
+    <node id="453" lat="-0.004144856706605062" lon="0.005876046570188376"/>
+    <node id="454" lat="-0.00419645665005672" lon="0.005950739312763374"/>
+    <node id="455" lat="-0.004249856623412976" lon="0.006073464287980032"/>
+    <node id="456" lat="-0.004268356687082198" lon="0.006188790663278116"/>
+    <node id="457" lat="-0.004261356692628338" lon="0.006321345347946393"/>
+    <node id="458" lat="-0.004233556839977432" lon="0.006409360943598417"/>
+    <node id="459" lat="-0.004204956760812435" lon="0.006467793105338595"/>
+    <node id="460" lat="-0.004163756746459299" lon="0.006538009075397281"/>
+    <node id="461" lat="-0.004109256632986205" lon="0.006602046934897018"/>
+    <way id="451">
+        <nd ref="52"/>
+        <nd ref="452"/>
+        <nd ref="453"/>
+        <nd ref="454"/>
+        <nd ref="455"/>
+        <nd ref="456"/>
+        <nd ref="457"/>
+        <nd ref="458"/>
+        <nd ref="459"/>
+        <nd ref="460"/>
+        <nd ref="461"/>
+        <nd ref="51"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="463" lat="0.002261943320247417" lon="0.01039109508030027"/>
+    <node id="464" lat="0.002288543244343276" lon="0.01045017202887195"/>
+    <node id="465" lat="0.002304943227433121" lon="0.01051168776301038"/>
+    <node id="466" lat="0.002309443302194621" lon="0.01056450984068602"/>
+    <node id="467" lat="0.002298443271746544" lon="0.01061920267743401"/>
+    <node id="468" lat="0.002277943327152246" lon="0.01068039821130918"/>
+    <node id="469" lat="0.001954043215643713" lon="0.01108108278457823"/>
+    <node id="470" lat="0.001896643206293242" lon="0.01112741203431289"/>
+    <node id="471" lat="0.001838443244572739" lon="0.01115090618034155"/>
+    <node id="472" lat="0.00178524325930899" lon="0.01115473323143327"/>
+    <node id="473" lat="0.001738443304221578" lon="0.01115059475268824"/>
+    <node id="474" lat="0.001680043217336538" lon="0.01114044484297336"/>
+    <node id="475" lat="0.00162054326447872" lon="0.01111599119273116"/>
+    <node id="476" lat="0.0008706432946751783" lon="0.01038371841190658"/>
+    <way id="462">
+        <nd ref="23"/>
+        <nd ref="463"/>
+        <nd ref="464"/>
+        <nd ref="465"/>
+        <nd ref="466"/>
+        <nd ref="467"/>
+        <nd ref="468"/>
+        <nd ref="469"/>
+        <nd ref="470"/>
+        <nd ref="471"/>
+        <nd ref="472"/>
+        <nd ref="473"/>
+        <nd ref="474"/>
+        <nd ref="475"/>
+        <nd ref="476"/>
+        <nd ref="22"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="478" lat="6.464326382347069e-005" lon="0.008242254689944105"/>
+    <way id="477">
+        <nd ref="57"/>
+        <nd ref="478"/>
+        <nd ref="36"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="480" lat="-0.004848656611108955" lon="-0.002063438895397912"/>
+    <node id="481" lat="-0.003438056843641525" lon="-0.000698287758405154"/>
+    <way id="479">
+        <nd ref="58"/>
+        <nd ref="480"/>
+        <nd ref="481"/>
+        <nd ref="13"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="483" lat="-0.006295556616127065" lon="-0.007700495034590551"/>
+    <node id="484" lat="-0.007143056532099644" lon="-0.006838898082712652"/>
+    <node id="485" lat="-0.00841945647638867" lon="-0.005543298733254765"/>
+    <way id="482">
+        <nd ref="60"/>
+        <nd ref="483"/>
+        <nd ref="484"/>
+        <nd ref="485"/>
+        <nd ref="59"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="487" lat="-0.003086956706687579" lon="-0.01008028808914563"/>
+    <node id="488" lat="-0.003173156646223526" lon="-0.01016457642214415"/>
+    <node id="489" lat="-0.003237556650027859" lon="-0.010210178641829"/>
+    <node id="490" lat="-0.003338156828800603" lon="-0.01025854752337758"/>
+    <node id="491" lat="-0.003425856610494342" lon="-0.01028334659513666"/>
+    <node id="492" lat="-0.003540456778174808" lon="-0.01029514575552258"/>
+    <node id="493" lat="-0.003642956775290361" lon="-0.01029247668894458"/>
+    <node id="494" lat="-0.003731256658333653" lon="-0.01026485612650957"/>
+    <node id="495" lat="-0.003845556638267313" lon="-0.01019733334770626"/>
+    <node id="496" lat="-0.003914456716833144" lon="-0.01013858317885531"/>
+    <node id="497" lat="-0.004020856687360643" lon="-0.01002814808189378"/>
+    <way id="486">
+        <nd ref="63"/>
+        <nd ref="487"/>
+        <nd ref="488"/>
+        <nd ref="489"/>
+        <nd ref="490"/>
+        <nd ref="491"/>
+        <nd ref="492"/>
+        <nd ref="493"/>
+        <nd ref="494"/>
+        <nd ref="495"/>
+        <nd ref="496"/>
+        <nd ref="497"/>
+        <nd ref="62"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="499" lat="-0.002010056741405621" lon="-0.009034127486208771"/>
+    <way id="498">
+        <nd ref="63"/>
+        <nd ref="499"/>
+        <nd ref="64"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="501" lat="-0.00294875684751496" lon="-0.006360422938979178"/>
+    <node id="502" lat="-0.002859156699190292" lon="-0.006461516851205804"/>
+    <node id="503" lat="-0.002796856638893305" lon="-0.006537418569089863"/>
+    <node id="504" lat="-0.002746156710393948" lon="-0.00661835960310343"/>
+    <node id="505" lat="-0.002688856763625745" lon="-0.006725957309033488"/>
+    <node id="506" lat="-0.002659056755905702" lon="-0.00682673047270873"/>
+    <node id="507" lat="-0.002637556733776835" lon="-0.006927016208243495"/>
+    <node id="508" lat="-0.002632156644063035" lon="-0.007096464652354541"/>
+    <node id="509" lat="-0.002639256701099165" lon="-0.007207155799869049"/>
+    <node id="510" lat="-0.002665856625195025" lon="-0.007320855952597214"/>
+    <node id="511" lat="-0.002701556761396152" lon="-0.007427242490065724"/>
+    <node id="512" lat="-0.002761456690438985" lon="-0.00752932386920011"/>
+    <node id="513" lat="-0.002835756858718617" lon="-0.007639452473101423"/>
+    <way id="500">
+        <nd ref="69"/>
+        <nd ref="501"/>
+        <nd ref="502"/>
+        <nd ref="503"/>
+        <nd ref="504"/>
+        <nd ref="505"/>
+        <nd ref="506"/>
+        <nd ref="507"/>
+        <nd ref="508"/>
+        <nd ref="509"/>
+        <nd ref="510"/>
+        <nd ref="511"/>
+        <nd ref="512"/>
+        <nd ref="513"/>
+        <nd ref="67"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="515" lat="-0.002985056810921581" lon="-0.004651868328081381"/>
+    <way id="514">
+        <nd ref="74"/>
+        <nd ref="515"/>
+        <nd ref="28"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="517" lat="-0.002598456662931046" lon="-0.006277255306902077"/>
+    <way id="516">
+        <nd ref="87"/>
+        <nd ref="517"/>
+        <nd ref="88"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="519" lat="-0.002411556756184147" lon="-0.006604434729668427"/>
+    <way id="518">
+        <nd ref="88"/>
+        <nd ref="519"/>
+        <nd ref="89"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="521" lat="-0.002316256604542933" lon="-0.007047511843956008"/>
+    <node id="522" lat="-0.002326956721388262" lon="-0.006920975169715051"/>
+    <node id="523" lat="-0.002348856719702145" lon="-0.006792813917768542"/>
+    <way id="520">
+        <nd ref="90"/>
+        <nd ref="521"/>
+        <nd ref="522"/>
+        <nd ref="523"/>
+        <nd ref="89"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="525" lat="-0.001671156700526828" lon="-0.007057776345888391"/>
+    <way id="524">
+        <nd ref="90"/>
+        <nd ref="525"/>
+        <nd ref="91"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="527" lat="-0.002980956712345097" lon="-0.005078621260111987"/>
+    <node id="528" lat="-0.003382356801613384" lon="-0.005473787861721001"/>
+    <way id="526">
+        <nd ref="98"/>
+        <nd ref="527"/>
+        <nd ref="528"/>
+        <nd ref="82"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="530" lat="-0.002838856605616471" lon="-0.004939720688719423"/>
+    <way id="529">
+        <nd ref="99"/>
+        <nd ref="530"/>
+        <nd ref="100"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="532" lat="0.001422043225934191" lon="-0.009045441959894826"/>
+    <way id="531">
+        <nd ref="102"/>
+        <nd ref="532"/>
+        <nd ref="103"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="534" lat="0.001229543241380985" lon="-0.007657430292334419"/>
+    <way id="533">
+        <nd ref="104"/>
+        <nd ref="534"/>
+        <nd ref="105"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="536" lat="0.002395043140381013" lon="-0.009186895909071648"/>
+    <way id="535">
+        <nd ref="109"/>
+        <nd ref="536"/>
+        <nd ref="101"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="538" lat="0.0008530432459582567" lon="-0.009066635488963483"/>
+    <way id="537">
+        <nd ref="106"/>
+        <nd ref="538"/>
+        <nd ref="111"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="540" lat="-0.0008186567395614801" lon="-0.01018808920996896"/>
+    <node id="541" lat="-0.0005664567455219331" lon="-0.01045144844362001"/>
+    <node id="542" lat="0.0002073432577266023" lon="-0.009697182729644868"/>
+    <way id="539">
+        <nd ref="108"/>
+        <nd ref="540"/>
+        <nd ref="541"/>
+        <nd ref="542"/>
+        <nd ref="111"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="544" lat="0.0003023432730230208" lon="-0.009093922692220298"/>
+    <way id="543">
+        <nd ref="111"/>
+        <nd ref="544"/>
+        <nd ref="107"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="546" lat="-0.004055356620862663" lon="-0.007920932629185322"/>
+    <way id="545">
+        <nd ref="115"/>
+        <nd ref="546"/>
+        <nd ref="116"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="548" lat="-0.003317256633877229" lon="-0.006914640797041325"/>
+    <node id="549" lat="-0.003289356718644054" lon="-0.006970471331642508"/>
+    <node id="550" lat="-0.003278556813360516" lon="-0.007016795098495942"/>
+    <node id="551" lat="-0.003276656720873647" lon="-0.00706750846005429"/>
+    <node id="552" lat="-0.003284056691512524" lon="-0.007123342284384204"/>
+    <node id="553" lat="-0.003302556755181745" lon="-0.007171862493454462"/>
+    <node id="554" lat="-0.003342156864794818" lon="-0.007226480763017851"/>
+    <way id="547">
+        <nd ref="117"/>
+        <nd ref="548"/>
+        <nd ref="549"/>
+        <nd ref="550"/>
+        <nd ref="551"/>
+        <nd ref="552"/>
+        <nd ref="553"/>
+        <nd ref="554"/>
+        <nd ref="116"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="556" lat="0.004069643364458204" lon="-0.004898986719270007"/>
+    <node id="557" lat="0.004437243135868171" lon="-0.00453978014243196"/>
+    <node id="558" lat="0.005011143440934681" lon="-0.003978872072704894"/>
+    <node id="559" lat="0.00548484299512534" lon="-0.003515978729111176"/>
+    <way id="555">
+        <nd ref="15"/>
+        <nd ref="556"/>
+        <nd ref="557"/>
+        <nd ref="558"/>
+        <nd ref="559"/>
+        <nd ref="121"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="561" lat="0.00300454324492232" lon="-0.00781450771154827"/>
+    <way id="560">
+        <nd ref="17"/>
+        <nd ref="561"/>
+        <nd ref="127"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="563" lat="0.003513543233273152" lon="-0.007448280853595846"/>
+    <way id="562">
+        <nd ref="20"/>
+        <nd ref="563"/>
+        <nd ref="125"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="565" lat="0.000186143269138508" lon="-0.002436815019245417"/>
+    <way id="564">
+        <nd ref="129"/>
+        <nd ref="565"/>
+        <nd ref="30"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <node id="567" lat="-0.0011148567183213" lon="0.007132567232037233"/>
+    <node id="568" lat="-0.0001709567333327181" lon="0.008057881843151607"/>
+    <way id="566">
+        <nd ref="46"/>
+        <nd ref="567"/>
+        <nd ref="568"/>
+        <nd ref="36"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <node id="570" lat="-0.002111156684801589" lon="0.006158878804781181"/>
+    <way id="569">
+        <nd ref="46"/>
+        <nd ref="570"/>
+        <nd ref="8"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <node id="572" lat="-0.005186656499963417" lon="0.003175661226364924"/>
+    <node id="573" lat="-0.005151356614091366" lon="0.003207112677908499"/>
+    <node id="574" lat="-0.004437056717906684" lon="0.003909845887870997"/>
+    <node id="575" lat="-0.003684456703246243" lon="0.00465035560115272"/>
+    <way id="571">
+        <nd ref="133"/>
+        <nd ref="572"/>
+        <nd ref="573"/>
+        <nd ref="574"/>
+        <nd ref="575"/>
+        <nd ref="52"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="2"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <node id="577" lat="-0.0009056567685394878" lon="-0.002577443246510474"/>
+    <way id="576">
+        <nd ref="135"/>
+        <nd ref="577"/>
+        <nd ref="28"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <node id="579" lat="-0.004499456840785939" lon="-0.003440509610555393"/>
+    <node id="580" lat="-0.004477656630910264" lon="-0.003465622028976205"/>
+    <node id="581" lat="-0.004466756663044457" lon="-0.003495042073027687"/>
+    <node id="582" lat="-0.004470056809250911" lon="-0.003520155313880682"/>
+    <node id="583" lat="-0.004480956777116718" lon="-0.003547382205444075"/>
+    <way id="578">
+        <nd ref="58"/>
+        <nd ref="579"/>
+        <nd ref="580"/>
+        <nd ref="581"/>
+        <nd ref="582"/>
+        <nd ref="583"/>
+        <nd ref="71"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="585" lat="-0.004598356778092292" lon="0.002299601393332286"/>
+    <node id="586" lat="-0.005198456756925584" lon="0.002916644160496226"/>
+    <way id="584">
+        <nd ref="42"/>
+        <nd ref="585"/>
+        <nd ref="586"/>
+        <nd ref="136"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <node id="588" lat="0.0001249432632883404" lon="-0.002510770588440358"/>
+    <way id="587">
+        <nd ref="29"/>
+        <nd ref="588"/>
+        <nd ref="129"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <node id="590" lat="7.53432607307736e-005" lon="0.009687275163279921"/>
+    <node id="591" lat="0.0002651432603960934" lon="0.00949448609381438"/>
+    <node id="592" lat="0.0002792432604840729" lon="0.009474980195585308"/>
+    <node id="593" lat="0.0002846432645278532" lon="0.009447998937100582"/>
+    <node id="594" lat="0.0002814432665736881" lon="0.009427438132524739"/>
+    <node id="595" lat="0.000272743253395485" lon="0.00941004752987043"/>
+    <node id="596" lat="8.984326270477425e-005" lon="0.009228354715418378"/>
+    <way id="589">
+        <nd ref="49"/>
+        <nd ref="590"/>
+        <nd ref="591"/>
+        <nd ref="592"/>
+        <nd ref="593"/>
+        <nd ref="594"/>
+        <nd ref="595"/>
+        <nd ref="596"/>
+        <nd ref="138"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="598" lat="0.0002643432566240511" lon="0.008823947265800798"/>
+    <node id="599" lat="0.0002831432681640264" lon="0.008781117190860889"/>
+    <node id="600" lat="0.0002665432627136663" lon="0.008747149096837232"/>
+    <node id="601" lat="-3.85673816279253e-006" lon="0.008484033303112355"/>
+    <node id="602" lat="-3.695673975728665e-005" lon="0.008468027127966153"/>
+    <node id="603" lat="-7.565673589753804e-005" lon="0.008484040979146065"/>
+    <node id="604" lat="-0.0002190567309594562" lon="0.008631395605092091"/>
+    <node id="605" lat="-0.0002368567335008777" lon="0.008665367537132603"/>
+    <node id="606" lat="-0.0002162567434583141" lon="0.00870022934079516"/>
+    <node id="607" lat="5.404326096242165e-005" lon="0.008963344586231914"/>
+    <node id="608" lat="9.314326327219511e-005" lon="0.008979187371517754"/>
+    <way id="597">
+        <nd ref="139"/>
+        <nd ref="598"/>
+        <nd ref="599"/>
+        <nd ref="600"/>
+        <nd ref="601"/>
+        <nd ref="602"/>
+        <nd ref="603"/>
+        <nd ref="604"/>
+        <nd ref="605"/>
+        <nd ref="606"/>
+        <nd ref="607"/>
+        <nd ref="608"/>
+        <nd ref="140"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="610" lat="-0.0005084567376259305" lon="0.008916515846018096"/>
+    <node id="611" lat="-0.0006642567483194937" lon="0.009074519323870045"/>
+    <node id="612" lat="-0.0006761567251838542" lon="0.009091830973034783"/>
+    <node id="613" lat="-0.0006718567070508777" lon="0.009125394430424387"/>
+    <node id="614" lat="-0.0006642567483194937" lon="0.009138396534950029"/>
+    <node id="615" lat="-0.0001697567362416566" lon="0.009621966371913336"/>
+    <node id="616" lat="-0.000155756730199931" lon="0.009632773130798399"/>
+    <node id="617" lat="-0.000120056739637836" lon="0.009634962993557757"/>
+    <node id="618" lat="-0.0001037567420272432" lon="0.00963171054841792"/>
+    <node id="619" lat="-4.535673652872053e-005" lon="0.009569777018730507"/>
+    <node id="620" lat="5.634326109829067e-005" lon="0.009461841019029161"/>
+    <node id="621" lat="6.174326085857e-005" lon="0.009446643568862942"/>
+    <node id="622" lat="6.064326209726336e-005" lon="0.009416330911748807"/>
+    <node id="623" lat="4.874326381539807e-005" lon="0.009401215704800892"/>
+    <node id="624" lat="-0.0004478567474552974" lon="0.008919760066836103"/>
+    <way id="609">
+        <nd ref="141"/>
+        <nd ref="610"/>
+        <nd ref="611"/>
+        <nd ref="612"/>
+        <nd ref="613"/>
+        <nd ref="614"/>
+        <nd ref="615"/>
+        <nd ref="616"/>
+        <nd ref="617"/>
+        <nd ref="618"/>
+        <nd ref="619"/>
+        <nd ref="620"/>
+        <nd ref="621"/>
+        <nd ref="622"/>
+        <nd ref="623"/>
+        <nd ref="624"/>
+        <nd ref="142"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="626" lat="-0.003099456853437509" lon="-0.00746474539761206"/>
+    <node id="627" lat="-0.003051956734418275" lon="-0.007404600383778683"/>
+    <node id="628" lat="-0.003012756875134278" lon="-0.0073481946949375"/>
+    <node id="629" lat="-0.002987656793196211" lon="-0.007297967116655263"/>
+    <node id="630" lat="-0.002968756753341975" lon="-0.007246764682092073"/>
+    <node id="631" lat="-0.002955756841968821" lon="-0.007202876959364785"/>
+    <node id="632" lat="-0.002944256772753461" lon="-0.00715004994709604"/>
+    <node id="633" lat="-0.002940056611594708" lon="-0.007099417732179753"/>
+    <node id="634" lat="-0.002937956668087362" lon="-0.007041878183502228"/>
+    <node id="635" lat="-0.002941656790478831" lon="-0.006983850658396101"/>
+    <node id="636" lat="-0.002949456737302722" lon="-0.00692850590707103"/>
+    <node id="637" lat="-0.002963556788792713" lon="-0.006874137108603159"/>
+    <node id="638" lat="-0.002985056810921581" lon="-0.006822369388986163"/>
+    <node id="639" lat="-0.00301165673501744" lon="-0.006772715320079564"/>
+    <node id="640" lat="-0.003035156638071384" lon="-0.006733544520066035"/>
+    <node id="641" lat="-0.003060256720009451" lon="-0.006698518778254995"/>
+    <node id="642" lat="-0.00308955668896221" lon="-0.006664550135943214"/>
+    <way id="625">
+        <nd ref="128"/>
+        <nd ref="626"/>
+        <nd ref="627"/>
+        <nd ref="628"/>
+        <nd ref="629"/>
+        <nd ref="630"/>
+        <nd ref="631"/>
+        <nd ref="632"/>
+        <nd ref="633"/>
+        <nd ref="634"/>
+        <nd ref="635"/>
+        <nd ref="636"/>
+        <nd ref="637"/>
+        <nd ref="638"/>
+        <nd ref="639"/>
+        <nd ref="640"/>
+        <nd ref="641"/>
+        <nd ref="642"/>
+        <nd ref="81"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="644" lat="-0.004672156633460579" lon="-0.008993710975582006"/>
+    <way id="643">
+        <nd ref="146"/>
+        <nd ref="644"/>
+        <nd ref="75"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="646" lat="-0.003858556823784526" lon="-0.005839543191888484"/>
+    <way id="645">
+        <nd ref="148"/>
+        <nd ref="646"/>
+        <nd ref="143"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="648" lat="-0.005434556750014048" lon="-0.007288600162378632"/>
+    <node id="649" lat="-0.005454456867402855" lon="-0.007286488704820723"/>
+    <node id="650" lat="-0.005655156637892937" lon="-0.007080559910510913"/>
+    <node id="651" lat="-0.0057230566389242" lon="-0.007151680007682814"/>
+    <node id="652" lat="-0.005746056777354921" lon="-0.00715273875204644"/>
+    <node id="653" lat="-0.005781656576829718" lon="-0.007187201950244283"/>
+    <way id="647">
+        <nd ref="153"/>
+        <nd ref="648"/>
+        <nd ref="649"/>
+        <nd ref="650"/>
+        <nd ref="651"/>
+        <nd ref="652"/>
+        <nd ref="653"/>
+        <nd ref="152"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="655" lat="-0.004951856498012269" lon="-0.007802850557785951"/>
+    <node id="656" lat="-0.005020556999701685" lon="-0.00773174361952898"/>
+    <node id="657" lat="-0.005021656865674462" lon="-0.007717114744145296"/>
+    <node id="658" lat="-0.00508015646685365" lon="-0.007656490526493272"/>
+    <node id="659" lat="-0.005095856697227764" lon="-0.00765129056194401"/>
+    <node id="660" lat="-0.005140856896554636" lon="-0.007604238120176408"/>
+    <node id="661" lat="-0.005158556733709765" lon="-0.007594811950782598"/>
+    <node id="662" lat="-0.005238056866538659" lon="-0.007515415444408768"/>
+    <node id="663" lat="-0.005243256831087919" lon="-0.007500787117313208"/>
+    <node id="664" lat="-0.005358256974953401" lon="-0.007384739194846541"/>
+    <node id="665" lat="-0.005364556805475439" lon="-0.007364909258337354"/>
+    <way id="654">
+        <nd ref="77"/>
+        <nd ref="655"/>
+        <nd ref="656"/>
+        <nd ref="657"/>
+        <nd ref="658"/>
+        <nd ref="659"/>
+        <nd ref="660"/>
+        <nd ref="661"/>
+        <nd ref="662"/>
+        <nd ref="663"/>
+        <nd ref="664"/>
+        <nd ref="665"/>
+        <nd ref="153"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="667" lat="-0.004237056837204362" lon="-0.008529191409418371"/>
+    <node id="668" lat="-0.004249956685995246" lon="-0.00851618930489273"/>
+    <node id="669" lat="-0.004259556662723737" lon="-0.008513183041119679"/>
+    <node id="670" lat="-0.004284756807244074" lon="-0.008489535922704971"/>
+    <node id="671" lat="-0.004286956813333688" lon="-0.008479214398807899"/>
+    <node id="672" lat="-0.004398556748410448" lon="-0.008365363466846177"/>
+    <node id="673" lat="-0.004404456602747471" lon="-0.008349110013756942"/>
+    <node id="674" lat="-0.004476156788752472" lon="-0.008277435049005555"/>
+    <node id="675" lat="-0.004496156694579485" lon="-0.008270772800034859"/>
+    <node id="676" lat="-0.004590756682288878" lon="-0.008170248559167015"/>
+    <node id="677" lat="-0.004592956688378493" lon="-0.00815253117679198"/>
+    <node id="678" lat="-0.004640956846165011" lon="-0.008103773010676767"/>
+    <node id="679" lat="-0.004655756787442763" lon="-0.008099304462482283"/>
+    <node id="680" lat="-0.004697156926960436" lon="-0.008056477677271107"/>
+    <node id="681" lat="-0.004715656716485597" lon="-0.00805420392642908"/>
+    <node id="682" lat="-0.004745256599041102" lon="-0.008020966700472079"/>
+    <node id="683" lat="-0.004748156494918479" lon="-0.008009913760220226"/>
+    <node id="684" lat="-0.004858356924563777" lon="-0.007894598898972705"/>
+    <node id="685" lat="-0.00486495666868856" lon="-0.007875337537246055"/>
+    <node id="686" lat="-0.004887856470392952" lon="-0.007855428098959174"/>
+    <node id="687" lat="-0.004910056656453642" lon="-0.007839907158800962"/>
+    <way id="666">
+        <nd ref="145"/>
+        <nd ref="667"/>
+        <nd ref="668"/>
+        <nd ref="669"/>
+        <nd ref="670"/>
+        <nd ref="671"/>
+        <nd ref="672"/>
+        <nd ref="673"/>
+        <nd ref="674"/>
+        <nd ref="675"/>
+        <nd ref="676"/>
+        <nd ref="677"/>
+        <nd ref="678"/>
+        <nd ref="679"/>
+        <nd ref="680"/>
+        <nd ref="681"/>
+        <nd ref="682"/>
+        <nd ref="683"/>
+        <nd ref="684"/>
+        <nd ref="685"/>
+        <nd ref="686"/>
+        <nd ref="687"/>
+        <nd ref="77"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="689" lat="-0.004147256837859216" lon="-0.008626302008438504"/>
+    <node id="690" lat="-0.004149456843948831" lon="-0.008610048007061147"/>
+    <node id="691" lat="-0.004173056809585045" lon="-0.008584937507648761"/>
+    <node id="692" lat="-0.004182656786313537" lon="-0.008584125492940046"/>
+    <node id="693" lat="-0.004199456608516366" lon="-0.008567222866714337"/>
+    <way id="688">
+        <nd ref="154"/>
+        <nd ref="689"/>
+        <nd ref="690"/>
+        <nd ref="691"/>
+        <nd ref="692"/>
+        <nd ref="693"/>
+        <nd ref="145"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="695" lat="-0.005289956723593062" lon="-0.007225275077437525"/>
+    <node id="696" lat="-0.005303256548568961" lon="-0.007229014950717839"/>
+    <node id="697" lat="-0.00533435654742632" lon="-0.007258601126070295"/>
+    <node id="698" lat="-0.00533805694396185" lon="-0.007268923198255489"/>
+    <way id="694">
+        <nd ref="150"/>
+        <nd ref="695"/>
+        <nd ref="696"/>
+        <nd ref="697"/>
+        <nd ref="698"/>
+        <nd ref="153"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="700" lat="-0.0009134567153633793" lon="-0.006274684932186035"/>
+    <way id="699">
+        <nd ref="157"/>
+        <nd ref="700"/>
+        <nd ref="92"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="702" lat="-0.002731456831698465" lon="0.005833112868793405"/>
+    <node id="703" lat="-0.003150756609142359" lon="0.006283629156320588"/>
+    <way id="701">
+        <nd ref="132"/>
+        <nd ref="702"/>
+        <nd ref="703"/>
+        <nd ref="51"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="704">
+        <nd ref="65"/>
+        <nd ref="165"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="706" lat="0.000747578723502944" lon="-0.00783237806630935"/>
+    <way id="705">
+        <nd ref="73"/>
+        <nd ref="706"/>
+        <nd ref="165"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="708" lat="0.002002543275125486" lon="-0.007106211570299733"/>
+    <way id="707">
+        <nd ref="166"/>
+        <nd ref="708"/>
+        <nd ref="17"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="709">
+        <nd ref="165"/>
+        <nd ref="166"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="711" lat="0.002245404071974578" lon="-0.006377081576990587"/>
+    <way id="710">
+        <nd ref="72"/>
+        <nd ref="711"/>
+        <nd ref="166"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="713" lat="0.0009530150180071484" lon="0.000950433814600697"/>
+    <node id="714" lat="0.0009148858283534309" lon="0.00058955208047784"/>
+    <node id="715" lat="0.0008592574749972442" lon="0.000224524928338413"/>
+    <node id="716" lat="0.0008314287001479021" lon="-8.792398013363458e-005"/>
+    <node id="717" lat="0.000908600733074672" lon="-0.000359171246522185"/>
+    <node id="718" lat="0.0008530715513325562" lon="-0.0006474826271223838"/>
+    <way id="712">
+        <nd ref="12"/>
+        <nd ref="713"/>
+        <nd ref="714"/>
+        <nd ref="715"/>
+        <nd ref="716"/>
+        <nd ref="717"/>
+        <nd ref="718"/>
+        <nd ref="55"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="720" lat="-1.729421103235672e-005" lon="0.001555131943233316"/>
+    <node id="721" lat="0.0001166682762087276" lon="0.001268244980906124"/>
+    <node id="722" lat="0.0002503306742235266" lon="0.0009645373614274661"/>
+    <node id="723" lat="0.0003912932887070014" lon="0.0006336040154976747"/>
+    <node id="724" lat="0.0005162558277496316" lon="0.0003025107750442987"/>
+    <node id="725" lat="0.0006213180437954104" lon="-2.370770425219078e-005"/>
+    <node id="726" lat="0.0007168805513030125" lon="-0.0003258699736589289"/>
+    <way id="719">
+        <nd ref="54"/>
+        <nd ref="720"/>
+        <nd ref="721"/>
+        <nd ref="722"/>
+        <nd ref="723"/>
+        <nd ref="724"/>
+        <nd ref="725"/>
+        <nd ref="726"/>
+        <nd ref="55"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="727">
+        <nd ref="129"/>
+        <nd ref="167"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="728">
+        <nd ref="56"/>
+        <nd ref="167"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="729">
+        <nd ref="86"/>
+        <nd ref="167"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="730">
+        <nd ref="56"/>
+        <nd ref="168"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="731">
+        <nd ref="31"/>
+        <nd ref="168"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="732">
+        <nd ref="32"/>
+        <nd ref="169"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="733">
+        <nd ref="169"/>
+        <nd ref="27"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <way id="734">
+        <nd ref="169"/>
+        <nd ref="168"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="735">
+        <nd ref="18"/>
+        <nd ref="170"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="736">
+        <nd ref="168"/>
+        <nd ref="170"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="737">
+        <nd ref="170"/>
+        <nd ref="27"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="738">
+        <nd ref="164"/>
+        <nd ref="171"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="739">
+        <nd ref="72"/>
+        <nd ref="171"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="740">
+        <nd ref="170"/>
+        <nd ref="171"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="741">
+        <nd ref="18"/>
+        <nd ref="172"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <node id="743" lat="0.0004634339214140245" lon="-0.00501565694875517"/>
+    <node id="744" lat="0.001219333294116744" lon="-0.005212848223552431"/>
+    <way id="742">
+        <nd ref="93"/>
+        <nd ref="743"/>
+        <nd ref="744"/>
+        <nd ref="172"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="745">
+        <nd ref="93"/>
+        <nd ref="173"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="746">
+        <nd ref="165"/>
+        <nd ref="173"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="747">
+        <nd ref="64"/>
+        <nd ref="173"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="748">
+        <nd ref="13"/>
+        <nd ref="54"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="no"/>
+    </way>
+    <way id="749">
+        <nd ref="131"/>
+        <nd ref="136"/>
+        <tag k="highway" v="tertiary"/>
+        <tag k="lanes" v="1"/>
+        <tag k="oneway" v="yes"/>
+    </way>
+    <bounds minlon="-0.01045144844362001" minlat="-0.00841945647638867" maxlat="0.00837254329980406" maxlon="0.01115473323143327"/>
+</osm>

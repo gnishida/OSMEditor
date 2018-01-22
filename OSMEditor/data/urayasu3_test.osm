@@ -1,0 +1,22 @@
+<osm version="0.6" generator="OSM Editor">
+    <node id="1" lon="139.9319427760329" lat="35.64225404178364"/>
+    <node id="2" lon="139.9318736755703" lat="35.64220074177006"/>
+    <node id="4" lon="139.9331476239196" lat="35.64122934176036"/>
+    <way id="5">
+        <nd ref="1"/>
+        <nd ref="2"/>
+        <tag v="tertiary" k="highway"/>
+        <tag v="1" k="lanes"/>
+        <tag v="no" k="oneway"/>
+    </way>
+    <node id="7" lon="139.9330695178397" lat="35.64132864181092"/>
+    <way id="6">
+        <nd ref="1"/>
+        <nd ref="7"/>
+        <nd ref="4"/>
+        <tag v="tertiary" k="highway"/>
+        <tag v="1" k="lanes"/>
+        <tag v="yes" k="oneway"/>
+    </way>
+    <bounds minlat="35.64122934176036" maxlat="35.64225404178364" maxlon="139.9331476239196" minlon="139.9318736755703"/>
+</osm>

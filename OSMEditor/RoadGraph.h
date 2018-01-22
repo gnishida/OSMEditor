@@ -28,6 +28,7 @@ private:
 
 public:
 	BGLGraph graph;
+	QVector2D centerLonLat;
 
 	// for rendering (These variables should be updated via setZ() function only!!
 	float highwayHeight;
@@ -49,21 +50,27 @@ public:
 	~RoadGraph();
 
 	void clear();
+	RoadGraph clone();
 	int getDegree(RoadVertexDesc v);
 	void reduce();
 	bool reduce(RoadVertexDesc desc);
 	void moveVertex(RoadVertexDesc v, const QVector2D& pt);
-	void movePolyline(std::vector<QVector2D>& polyline, const QVector2D& src_pos, const QVector2D& tgt_pos);
+	void movePolyline(std::vector<QVector2D>& polyline, const QVector2D& tgt_pos);
 	bool hasEdge(RoadVertexDesc desc1, RoadVertexDesc desc2);
 	RoadEdgeDesc getEdge(RoadVertexDesc src, RoadVertexDesc tgt);
+	bool getEdge(const QVector2D &pt, float threshold, RoadEdgeDesc& e);
+	void deleteEdge(RoadEdgeDesc desc);
 	void snapVertex(RoadVertexDesc v1, RoadVertexDesc v2);
 	void orderPolyLine(RoadEdgeDesc e, RoadVertexDesc src);
 	RoadVertexDesc splitEdge(RoadEdgeDesc edge_desc, const QVector2D& pt);
 	void planarify();
 	bool planarifyOne();
 
-	static float pointSegmentDistance(const QVector2D &a, const QVector2D &b, const QVector2D &c, bool segmentOnly = true);
+	static float pointSegmentDistance(const QVector2D &a, const QVector2D &b, const QVector2D &c);
+	static float pointSegmentDistance(const QVector2D &a, const QVector2D &b, const QVector2D &c, QVector2D& closest_pt);
 	static bool segmentSegmentIntersect(const QVector2D& a, const QVector2D& b, const QVector2D& c, const QVector2D& d, float *tab, float *tcd, QVector2D& intPoint);
+	static QVector2D projLatLonToMeter(double longitude, double latitude, const QVector2D& centerLonLat);
+	static std::pair<double, double> projMeterToLatLon(const QVector2D& pos, const QVector2D& centerLonLat);
 };
 
 typedef boost::shared_ptr<RoadGraph> RoadGraphPtr;

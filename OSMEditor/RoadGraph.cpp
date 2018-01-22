@@ -1,6 +1,7 @@
 ﻿#include "RoadGraph.h"
 
 float RoadGraph::EPS = 1e-6f;
+float M_PI = 3.141592653;
 
 RoadGraph::RoadGraph() {
 	showHighways = true;
@@ -14,6 +15,39 @@ RoadGraph::~RoadGraph() {
 
 void RoadGraph::clear() {
 	graph.clear();
+}
+
+RoadGraph RoadGraph::clone() {
+	RoadGraph copied_roads;
+
+	QMap<RoadVertexDesc, RoadVertexDesc> mapping;
+
+	// generate vertices
+	RoadVertexIter vi, vend;
+	for (boost::tie(vi, vend) = boost::vertices(graph); vi != vend; vi++) {
+		if (!graph[*vi]->valid) continue;
+
+		RoadVertexPtr v = RoadVertexPtr(new RoadVertex(*graph[*vi]));
+		RoadVertexDesc v_desc = boost::add_vertex(copied_roads.graph);
+		copied_roads.graph[v_desc] = v;
+
+		mapping[*vi] = v_desc;
+	}
+
+	// generate edges
+	RoadEdgeIter ei, eend;
+	for (boost::tie(ei, eend) = boost::edges(graph); ei != eend; ei++) {
+		if (!graph[*ei]->valid) continue;
+		
+		RoadVertexDesc src = boost::source(*ei, graph);
+		RoadVertexDesc tgt = boost::target(*ei, graph);
+		if (!graph[src]->valid || !graph[tgt]->valid) continue;
+
+		std::pair<RoadEdgeDesc, bool> edge_pair = boost::add_edge(mapping[src], mapping[tgt], copied_roads.graph);
+		copied_roads.graph[edge_pair.first] = RoadEdgePtr(new RoadEdge(*graph[*ei]));
+	}
+
+	return copied_roads;
 }
 
 /**
@@ -118,7 +152,7 @@ void RoadGraph::moveVertex(RoadVertexDesc v, const QVector2D& pt) {
 			std::reverse(polyline.begin(), polyline.end());
 		}
 
-		movePolyline(polyline, graph[tgt]->pt, pt);
+		movePolyline(polyline, pt);
 
 		graph[*ei]->polyline = polyline;
 	}
@@ -128,18 +162,14 @@ void RoadGraph::moveVertex(RoadVertexDesc v, const QVector2D& pt) {
 }
 
 /**
-* Polylineを指定した始点、終点になるよう変形する。
+* Linearly transform the polyline such that its end point is placed at the target position.
 */
-void RoadGraph::movePolyline(std::vector<QVector2D>& polyline, const QVector2D& src_pos, const QVector2D& tgt_pos) {
-	/*
-	float scale = (tgt_pos - src_pos).length() / (polyline.back() - polyline[0]).length();
-	float rotation_degree = Util::rad2deg(Util::diffAngle(polyline.back() - polyline[0], tgt_pos - src_pos, false));
-
-	polyline.scale(scale);
-	polyline.rotate(rotation_degree, QVector2D(0, 0));
-	polyline.translate(src_pos - polyline[0]);
-	*/
-	polyline[0] = src_pos;
+void RoadGraph::movePolyline(std::vector<QVector2D>& polyline, const QVector2D& tgt_pos) {
+	QVector2D dir = tgt_pos - polyline.back();
+	int num = polyline.size();
+	for (int i = 0; i < num - 1; i++) {
+		polyline[i] += dir * (float)i / (float)(num - 1);
+	}
 	polyline.back() = tgt_pos;
 }
 
@@ -186,6 +216,67 @@ RoadEdgeDesc RoadGraph::getEdge(RoadVertexDesc src, RoadVertexDesc tgt) {
 }
 
 /**
+* Find the edge which is the closest to the specified point.
+* If the distance is within the threshold, return true. Otherwise, return false.
+*/
+bool RoadGraph::getEdge(const QVector2D &pt, float threshold, RoadEdgeDesc& e) {
+	float min_dist = std::numeric_limits<float>::max();
+	RoadEdgeDesc min_e;
+
+	RoadEdgeIter ei, eend;
+	for (boost::tie(ei, eend) = boost::edges(graph); ei != eend; ++ei) {
+		if (!graph[*ei]->valid) continue;
+
+		RoadVertexPtr src = graph[boost::source(*ei, graph)];
+		RoadVertexPtr tgt = graph[boost::target(*ei, graph)];
+
+		if (!src->valid) continue;
+		if (!tgt->valid) continue;
+
+		for (int i = 0; i < graph[*ei]->polyline.size() - 1; i++) {
+			float dist = pointSegmentDistance(graph[*ei]->polyline[i], graph[*ei]->polyline[i + 1], pt);
+			if (dist < min_dist) {
+				min_dist = dist;
+				e = *ei;
+			}
+		}
+	}
+
+	if (min_dist < threshold) return true;
+	else return false;
+
+}
+
+void RoadGraph::deleteEdge(RoadEdgeDesc desc) {
+	graph[desc]->valid = false;
+	RoadVertexDesc src = boost::source(desc, graph);
+	RoadVertexDesc tgt = boost::target(desc, graph);
+
+	int cnt = 0;
+	RoadOutEdgeIter ei, eend;
+	for (boost::tie(ei, eend) = boost::out_edges(src, graph); ei != eend; ++ei) {
+		if (graph[*ei]->valid) {
+			cnt++;
+			break;
+		}
+	}
+	if (cnt == 0) {
+		graph[src]->valid = false;
+	}
+
+	cnt = 0;
+	for (boost::tie(ei, eend) = boost::out_edges(tgt, graph); ei != eend; ++ei) {
+		if (graph[*ei]->valid) {
+			cnt++;
+			break;
+		}
+	}
+	if (cnt == 0) {
+		graph[tgt]->valid = false;
+	}
+}
+
+/**
 * Snap v1 to v2.
 */
 void RoadGraph::snapVertex(RoadVertexDesc v1, RoadVertexDesc v2) {
@@ -196,8 +287,8 @@ void RoadGraph::snapVertex(RoadVertexDesc v1, RoadVertexDesc v2) {
 	if (hasEdge(v1, v2)) {
 		RoadEdgeDesc e = getEdge(v1, v2);
 
-		// if the edge is too short, remove it. (This might be contraversial...)
-		if (graph[e]->getLength() < 1.0f) {
+		// if the edge is too short, remove it.
+		if (graph[e]->getLength() < 0.01f) {
 			graph[e]->valid = false;
 		}
 	}
@@ -212,9 +303,8 @@ void RoadGraph::snapVertex(RoadVertexDesc v1, RoadVertexDesc v2) {
 		// invalidate the old edge
 		graph[*ei]->valid = false;
 
-		if (v1b == v2) continue;
-		if (hasEdge(v2, v1b)) continue;
-		//if (hasCloseEdge(roads, v2, v1b)) continue;	// <-- In this case, snap the edge to the other instead of discard it.
+		//if (v1b == v2) continue;
+		//if (hasEdge(v2, v1b)) continue;
 
 		// add a new edge
 		RoadEdgePtr e = RoadEdgePtr(new RoadEdge(*graph[*ei]));
@@ -389,12 +479,12 @@ void RoadGraph::orderPolyLine(RoadEdgeDesc e, RoadVertexDesc src) {
 * Return the sistance from segment ab to point c.
 * If the
 */
-float RoadGraph::pointSegmentDistance(const QVector2D &a, const QVector2D &b, const QVector2D &c, bool segmentOnly) {
+float RoadGraph::pointSegmentDistance(const QVector2D &a, const QVector2D &b, const QVector2D &c) {
 	float r_numerator = (c.x() - a.x())*(b.x() - a.x()) + (c.y() - a.y())*(b.y() - a.y());
 	float r_denomenator = (b.x() - a.x())*(b.x() - a.x()) + (b.y() - a.y())*(b.y() - a.y());
 	float r = r_numerator / r_denomenator;
 
-	if (segmentOnly && (r < 0 || r > 1)) {
+	if (r < 0 || r > 1) {
 		float dist1 = std::hypot(c.x() - a.x(), c.y() - a.y());
 		float dist2 = std::hypot(c.x() - b.x(), c.y() - b.y());
 		if (dist1 < dist2) {
@@ -405,6 +495,29 @@ float RoadGraph::pointSegmentDistance(const QVector2D &a, const QVector2D &b, co
 		}
 	}
 	else {
+		return abs((a.y() - c.y())*(b.x() - a.x()) - (a.x() - c.x())*(b.y() - a.y())) / sqrt(r_denomenator);
+	}
+}
+
+float RoadGraph::pointSegmentDistance(const QVector2D &a, const QVector2D &b, const QVector2D &c, QVector2D& closest_pt) {
+	float r_numerator = QVector2D::dotProduct(c - a, b - a);
+	float r_denomenator = (b - a).lengthSquared();
+	float r = r_numerator / r_denomenator;
+
+	if (r < 0 || r > 1) {
+		float dist1 = (c - a).length();
+		float dist2 = (c - b).length();
+		if (dist1 < dist2) {
+			closest_pt = a;
+			return dist1;
+		}
+		else {
+			closest_pt = b;
+			return dist2;
+		}
+	}
+	else {
+		closest_pt = a + (b - a) * r;
 		return abs((a.y() - c.y())*(b.x() - a.x()) - (a.x() - c.x())*(b.y() - a.y())) / sqrt(r_denomenator);
 	}
 }
@@ -465,4 +578,30 @@ bool RoadGraph::segmentSegmentIntersect(const QVector2D& a, const QVector2D& b, 
 	intPoint = a + (*tab)*dirVec;
 
 	return true;
+}
+
+QVector2D RoadGraph::projLatLonToMeter(double longitude, double latitude, const QVector2D& centerLonLat) {
+	QVector2D result;
+
+	double theta = latitude / 180 * M_PI;
+	double dx = (longitude - centerLonLat.x()) / 180 * M_PI;
+	double dy = (latitude - centerLonLat.y()) / 180 * M_PI;
+
+	double radius = 6378137;
+
+	result.setX(radius * cos(theta) * dx);
+	result.setY(radius * dy);
+
+	return result;
+}
+
+std::pair<double, double> RoadGraph::projMeterToLatLon(const QVector2D& pos, const QVector2D& centerLonLat) {
+	double theta = centerLonLat.y() / 180 * M_PI;
+
+	double radius = 6378137;
+
+	double lon = centerLonLat.x() + pos.x() / radius / std::cos(theta) / M_PI * 180;
+	double lat = centerLonLat.y() + pos.y() / radius / M_PI * 180;
+
+	return{ lon, lat };
 }

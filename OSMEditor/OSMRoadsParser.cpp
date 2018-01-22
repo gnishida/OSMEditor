@@ -1,7 +1,6 @@
 ﻿#include <vector>
 #include <iostream>
-#include "RoadVertex.h"
-#include "RoadEdge.h"
+#include "RoadGraph.h"
 #include "OSMRoadsParser.h"
 
 double OSMRoadsParser::M_PI = 3.141592653;
@@ -47,32 +46,17 @@ bool OSMRoadsParser::endElement(const QString& namespaceURI, const QString& loca
 	return true;
 }
 
-QVector2D OSMRoadsParser::projLatLonToMeter(double longitude, double latitude, const QVector2D &centerLatLon) {
-	QVector2D result;
-
-	double y = latitude / 180 * M_PI;
-	double dx = (longitude - centerLatLon.x()) / 180 * M_PI;
-	double dy = (latitude - centerLatLon.y()) / 180 * M_PI;
-
-	double radius = 6378137;
-
-	result.setX(radius * cos(y) * dx);
-	result.setY(radius * dy);
-
-	return  result;
-}
-
 void OSMRoadsParser::handleBounds(const QXmlAttributes &atts) {
 	float minlat = atts.value("minlat").toFloat();
 	float maxlat = atts.value("maxlat").toFloat();
 	float minlon = atts.value("minlon").toFloat();
 	float maxlon = atts.value("maxlon").toFloat();
-	centerLonLat = QVector2D((minlon + maxlon) * 0.5, (minlat + maxlat) * 0.5);
+	roads->centerLonLat = QVector2D((minlon + maxlon) * 0.5, (minlat + maxlat) * 0.5);
 }
 
 void OSMRoadsParser::handleNode(const QXmlAttributes &atts) {
 	unsigned long long id = atts.value("id").toULongLong();
-	QVector2D pos = projLatLonToMeter(atts.value("lon").toDouble(), atts.value("lat").toDouble(), centerLonLat);
+	QVector2D pos = RoadGraph::projLatLonToMeter(atts.value("lon").toDouble(), atts.value("lat").toDouble(), roads->centerLonLat);
 
 	idToActualId.insert(id, id);
 

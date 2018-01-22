@@ -52,7 +52,6 @@ public:
 	bool startElement(const QString &namespaceURI, const QString &localName, const QString &qName, const QXmlAttributes &atts);
 	bool characters(const QString &ch_in);
 	bool endElement(const QString&, const QString& localName, const QString& qName);
-	static QVector2D projLatLonToMeter(double longitude, double latitude, const QVector2D &centerLatLon);
 
 private:
 	void handleBounds(const QXmlAttributes &atts);
