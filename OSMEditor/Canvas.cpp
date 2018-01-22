@@ -14,7 +14,7 @@
 #include "OSMRoadsParser.h"
 #include "OSMRoadsExporter.h"
 
-Canvas::Canvas() {
+Canvas::Canvas(MainWindow* mainWin) {
 	this->mainWin = mainWin;
 	ctrlPressed = false;
 	shiftPressed = false;
@@ -395,11 +395,6 @@ void Canvas::paintEvent(QPaintEvent *e) {
 			painter.drawEllipse(pt.x() - 2, pt.y() - 2, 5, 5);
 		}
 	}
-	
-	// draw axes
-	painter.setPen(QPen(QColor(128, 128, 128), 1));
-	painter.drawLine(-10000 * scale + origin.x(), origin.y(), 10000 * scale + origin.x(), origin.y());
-	painter.drawLine(origin.x(), -10000 * scale + origin.y(), origin.x(), 10000 * scale + origin.y());
 }
 
 void Canvas::mousePressEvent(QMouseEvent* e) {
@@ -432,10 +427,12 @@ void Canvas::mousePressEvent(QMouseEvent* e) {
 			}
 			else if (findClosestEdgePoint(pt, 9, selected_edge_desc, selected_edge_point)) {
 				edge_point_selected = true;
+				mainWin->propertyWidget->setRoadEdge(roads.graph[selected_edge_desc]);
 			}
 			// hit test against the edges
 			else if (findClosestEdge(pt, 9, selected_edge_desc)) {
 				edge_selected = true;
+				mainWin->propertyWidget->setRoadEdge(roads.graph[selected_edge_desc]);
 			}
 		}
 	}

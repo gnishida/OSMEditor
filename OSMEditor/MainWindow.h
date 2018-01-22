@@ -4,13 +4,15 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_MainWindow.h"
 #include "Canvas.h"
+#include "PropertyWidget.h"
 
 class MainWindow : public QMainWindow {
 	Q_OBJECT
 
-private:
+public:
 	Ui::MainWindowClass ui;
-	Canvas canvas;
+	Canvas* canvas;
+	PropertyWidget* propertyWidget;
 
 public:
 	MainWindow(QWidget *parent = 0);
@@ -27,6 +29,7 @@ public slots:
 	void onRedo();
 	void onDeleteEdge();
 	void onPlanarGraph();
+	void onPropertyWindow();
 };
 
 #endif // MAINWINDOW_H

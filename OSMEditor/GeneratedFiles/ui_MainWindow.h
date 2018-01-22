@@ -33,6 +33,7 @@ public:
     QAction *actionSave;
     QAction *actionPlanarGraph;
     QAction *actionRedo;
+    QAction *actionPropertyWindow;
     QWidget *centralWidget;
     QMenuBar *menuBar;
     QMenu *menuFile;
@@ -75,6 +76,8 @@ public:
         QIcon icon4;
         icon4.addFile(QStringLiteral("Resources/redo.png"), QSize(), QIcon::Normal, QIcon::Off);
         actionRedo->setIcon(icon4);
+        actionPropertyWindow = new QAction(MainWindowClass);
+        actionPropertyWindow->setObjectName(QStringLiteral("actionPropertyWindow"));
         centralWidget = new QWidget(MainWindowClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         MainWindowClass->setCentralWidget(centralWidget);
@@ -106,6 +109,8 @@ public:
         menuEdit->addAction(actionRedo);
         menuEdit->addAction(actionDeleteEdge);
         menuTool->addAction(actionPlanarGraph);
+        menuTool->addSeparator();
+        menuTool->addAction(actionPropertyWindow);
 
         retranslateUi(MainWindowClass);
 
@@ -127,6 +132,7 @@ public:
         actionPlanarGraph->setText(QApplication::translate("MainWindowClass", "Planar Graph", 0));
         actionRedo->setText(QApplication::translate("MainWindowClass", "Redo", 0));
         actionRedo->setShortcut(QApplication::translate("MainWindowClass", "Ctrl+Y", 0));
+        actionPropertyWindow->setText(QApplication::translate("MainWindowClass", "Property Window", 0));
         menuFile->setTitle(QApplication::translate("MainWindowClass", "File", 0));
         menuEdit->setTitle(QApplication::translate("MainWindowClass", "Edit", 0));
         menuTool->setTitle(QApplication::translate("MainWindowClass", "Tool", 0));

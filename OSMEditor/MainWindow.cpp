@@ -4,7 +4,13 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 	ui.setupUi(this);
 
-	setCentralWidget(&canvas);
+	canvas = new Canvas(this);
+	setCentralWidget(canvas);
+
+	// setup the docking widgets
+	propertyWidget = new PropertyWidget(this);
+	propertyWidget->show();
+	addDockWidget(Qt::RightDockWidgetArea, propertyWidget);
 
 	connect(ui.actionOpen, SIGNAL(triggered()), this, SLOT(onOpen()));
 	connect(ui.actionSave, SIGNAL(triggered()), this, SLOT(onSave()));
@@ -13,6 +19,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 	connect(ui.actionRedo, SIGNAL(triggered()), this, SLOT(onRedo()));
 	connect(ui.actionDeleteEdge, SIGNAL(triggered()), this, SLOT(onDeleteEdge()));
 	connect(ui.actionPlanarGraph, SIGNAL(triggered()), this, SLOT(onPlanarGraph()));
+	connect(ui.actionPropertyWindow, SIGNAL(triggered()), this, SLOT(onPropertyWindow()));
 
 	// create tool bar for file menu
 	ui.mainToolBar->addAction(ui.actionOpen);
@@ -29,11 +36,11 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::keyPressEvent(QKeyEvent* e) {
-	canvas.keyPressEvent(e);
+	canvas->keyPressEvent(e);
 }
 
 void MainWindow::keyReleaseEvent(QKeyEvent* e) {
-	canvas.keyReleaseEvent(e);
+	canvas->keyReleaseEvent(e);
 }
 
 void MainWindow::onOpen() {
@@ -44,8 +51,8 @@ void MainWindow::onOpen() {
 	}
 
 	QApplication::setOverrideCursor(Qt::WaitCursor);
-	canvas.open(filename);
-	canvas.update();
+	canvas->open(filename);
+	canvas->update();
 	QApplication::restoreOverrideCursor();
 
 	setWindowTitle("OSM Editor - " + filename);
@@ -59,25 +66,30 @@ void MainWindow::onSave() {
 	}
 
 	QApplication::setOverrideCursor(Qt::WaitCursor);
-	canvas.save(filename);
-	canvas.update();
+	canvas->save(filename);
+	canvas->update();
 	QApplication::restoreOverrideCursor();
 
 	setWindowTitle("OSM Editor - " + filename);
 }
 
 void MainWindow::onUndo() {
-	canvas.undo();
+	canvas->undo();
 }
 
 void MainWindow::onRedo() {
-	canvas.redo();
+	canvas->redo();
 }
 
 void MainWindow::onDeleteEdge() {
-	canvas.deleteEdge();
+	canvas->deleteEdge();
 }
 
 void MainWindow::onPlanarGraph() {
-	canvas.planarGraph();
+	canvas->planarGraph();
+}
+
+void MainWindow::onPropertyWindow() {
+	propertyWidget->show();
+	addDockWidget(Qt::RightDockWidgetArea, propertyWidget);
 }

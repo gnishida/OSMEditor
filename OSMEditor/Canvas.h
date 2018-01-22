@@ -35,7 +35,7 @@ public:
 	std::vector<QVector2D> new_edge;
 
 public:
-	Canvas();
+	Canvas(MainWindow* mainWin);
 	~Canvas();
 
 	void clear();

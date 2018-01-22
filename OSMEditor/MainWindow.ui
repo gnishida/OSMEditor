@@ -45,6 +45,8 @@
      <string>Tool</string>
     </property>
     <addaction name="actionPlanarGraph"/>
+    <addaction name="separator"/>
+    <addaction name="actionPropertyWindow"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
@@ -127,6 +129,11 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionPropertyWindow">
+   <property name="text">
+    <string>Property Window</string>
    </property>
   </action>
  </widget>
