@@ -9,7 +9,6 @@
 #include <QResizeEvent>
 #include <QtWidgets/QApplication>
 #include <QDate>
-#include <glm/gtx/string_cast.hpp>
 #include "MainWindow.h"
 #include "OSMRoadsParser.h"
 #include "OSMRoadsExporter.h"
