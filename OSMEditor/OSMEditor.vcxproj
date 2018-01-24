@@ -180,6 +180,7 @@
     <ClCompile Include="PropertyWidget.cpp" />
     <ClCompile Include="RoadEdge.cpp" />
     <ClCompile Include="RoadGraph.cpp" />
+    <ClCompile Include="RoadGraphEditor.cpp" />
     <ClCompile Include="RoadVertex.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -247,6 +248,7 @@
     </CustomBuild>
     <ClInclude Include="RoadEdge.h" />
     <ClInclude Include="RoadGraph.h" />
+    <ClInclude Include="RoadGraphEditor.h" />
     <ClInclude Include="RoadVertex.h" />
     <CustomBuild Include="Canvas.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
