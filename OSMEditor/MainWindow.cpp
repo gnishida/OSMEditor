@@ -28,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
 	// create tool bar for edit menu
 	ui.mainToolBar->addAction(ui.actionUndo);
+	ui.mainToolBar->addAction(ui.actionRedo);
 	ui.mainToolBar->addAction(ui.actionDeleteEdge);
 	//ui.mainToolBar->addSeparator();
 }
